@@ -11,7 +11,8 @@ export default function Footer(){
                    
                     <div className="col-lg-4 col-md-6 item">
                         <div className="footer-item about">
-                            <img className="logo" src="assets/img/logo-light.png" alt="Logo" />
+                            {/*<img className="logo" src="assets/img/logo-light.png" alt="Logo" /> */}
+                            <h2>Smart Farming Network (SFN)</h2>
                             <p>
                                 Happen active county. Winding morning ambition shyness evident to poor. Because elderly new to the point to main success.
                             </p>
