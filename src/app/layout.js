@@ -4,6 +4,7 @@ import "@/app/globals.css";
 
 import Preloader from "@/app/components/Preloder";
 import Footer from "@/app/components/Footer";
+import Header from "@/app/components/Header";
 
 export const metadata = {
   title: "Smart Farming Network",
@@ -26,6 +27,8 @@ export default function RootLayout({
 
       <body suppressHydrationWarning>
         <Preloader />
+       
+        <Header />
         {children}
         <Footer />
 
