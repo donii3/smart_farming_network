@@ -2,6 +2,8 @@ import Head from "next/head";
 import Script from "next/script";
 import "@/app/globals.css";
 
+import Preloader from "@/app/components/Preloder";
+
 export const metadata = {
   title: "Smart Farming Network",
   description: "A smart agricultural application",
@@ -22,6 +24,7 @@ export default function RootLayout({
       </Head>
 
       <body suppressHydrationWarning>
+        <Preloader />
         {children}
 
         {/* JavaScript Files */}
