@@ -3,6 +3,7 @@ import Script from "next/script";
 import "@/app/globals.css";
 
 import Preloader from "@/app/components/Preloder";
+import Footer from "@/app/components/Footer";
 
 export const metadata = {
   title: "Smart Farming Network",
@@ -26,6 +27,7 @@ export default function RootLayout({
       <body suppressHydrationWarning>
         <Preloader />
         {children}
+        <Footer />
 
         {/* JavaScript Files */}
         <Script src="/assets/js/jquery-3.6.0.min.js" strategy="beforeInteractive" />
