@@ -2,7 +2,7 @@
 'use client';
 
 import { useEffect } from 'react';
-import { usePreloader } from '../hooks/usePreloder';
+import { usePreloader } from '../hooks/usePreloader';
 
 export default function Preloader() {
   usePreloader();

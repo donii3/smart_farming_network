@@ -2,7 +2,7 @@ import Head from "next/head";
 import Script from "next/script";
 import "@/app/globals.css";
 
-import Preloader from "@/app/components/Preloder";
+import Preloader from "@/app/components/Preloader";
 import Footer from "@/app/components/Footer";
 import Header from "@/app/components/Header";
 
