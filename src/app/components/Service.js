@@ -10,7 +10,7 @@ export default function Service(){
                     <div className="col-lg-6 offset-lg-3">
                         <div className="site-heading text-center">
                             <h5 className="sub-title">What we do</h5>
-                            <h2 className="title">Currently we are <br/> selling organic food</h2>
+                            <h2 className="title">Smart Farming Network (SFN),  <br/> a pioneering platform revolutionizing agriculture through technology.</h2>
                         </div>
                     </div>
                 </div>
@@ -23,10 +23,10 @@ export default function Service(){
                             </div>
                             <div className="info">
                                 <div className="top">
-                                    <h4><a href="#">Agriculture <span>Products</span></a></h4>
+                                    <h4><a href="#">Smart <span>Farming Solutions</span></a></h4>
                                 </div>
                                 <p>
-                                    Seeing rather her you not esteem men settle genius excuse. Deal say over means age from. Comparison new melancholy son devonshire to the dispatched.
+                                Implement our cutting-edge techniques to enhance crop yields and streamline farm management with real-time data insights.
                                 </p>
                             </div>
                             <a href="#" className="btn-angle"><i className="fas fa-arrow-right"></i></a>
@@ -40,10 +40,10 @@ export default function Service(){
                             </div>
                             <div className="info">
                                 <div className="top">
-                                    <h4><a href="#">Fresh <span>Vegetables</span></a></h4>
+                                    <h4><a href="#">Market &  <span>Investment Hub</span></a></h4>
                                 </div>
                                 <p>
-                                    Perming rather her you not esteem men settle genius excuse. Deal say over means age from. Comparison new melancholy son devonshire to the dispatched.
+                                    Seamlessly connect with key stakeholders—buyers, suppliers, and investors—to expand your market reach and secure growth opportunities.
                                 </p>
                                 <a href="#" className="btn-angle"><i className="fas fa-arrow-right"></i></a>
                             </div>
@@ -57,10 +57,10 @@ export default function Service(){
                             </div>
                             <div className="info">
                                 <div className="top">
-                                    <h4><a href="#">Dairy <span>Products</span></a></h4>
+                                    <h4><a href="#">Land  <span>Brokerage Services</span></a></h4>
                                 </div>
                                 <p>
-                                    Seeing rather her you not esteem men settle genius excuse. Deal say over means age from. Comparison new melancholy son devonshire to the dispatched.
+                                    Navigate farmland acquisitions with ease, backed by our expert guidance to simplify the purchasing process.
                                 </p>
                                 <a href="#" className="btn-angle"><i className="fas fa-arrow-right"></i></a>
                             </div>

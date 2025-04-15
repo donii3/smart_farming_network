@@ -12,14 +12,14 @@ export default function Benefit(){
                             <div className="shape">
                                 <img src="/assets/img/illustration/8.png" alt="Image Not Found" />
                             </div>
-                            <h2 className="title">Distributors of Organic Produce</h2>
+                            <h2 className="title">Elevate Your Agricultural Operations with SFN</h2>
                             <p>
-                                Contrasted dissimilar get joy you instrument out reasonably. Again keeps at no meant stuff. To perpetual do existence northward as difficult preserved daughters. Continued at up to zealously.
+                            SFN's innovative agri-tech platform transformed my farming practices with technology-driven solutions that truly made a difference.
                             </p>
                             <ul className="list-standard">
-                                <li>Modern Agriculture Equipment</li>
-                                <li>Awesome Harvest of Wheat</li>
-                                <li>Fresh Fruits & Vegetables</li>
+                                <li>Smart Farming Solutions</li>
+                                <li>Market & Investment Hub</li>
+                                <li>Land Brokerage Services</li>
                             </ul>
                         </div>
                     </div>
