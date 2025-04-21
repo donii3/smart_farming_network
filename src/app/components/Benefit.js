@@ -2,7 +2,7 @@
 
 export default function Benefit(){
     return (
-        <div className="benifits-area default-padding-top video-bg-live bg-cover mt--50 mt-md-0 mt-xs-0" style={{backgroundImage: 'url(/assets/img/2440x1578.png)'}}>
+        <div className="benifits-area default-padding-top video-bg-live bg-cover mt--50 mt-md-0 mt-xs-0" style={{backgroundImage: 'url(/assets/img/6.jpeg)'}}>
             <div className="player" data-property="{videoURL:'w9eRIGTHKJM',containment:'.video-bg-live', showControls:false, autoPlay:true, zoom:0, loop:true, mute:true, startAt:13, opacity:1, quality:'default'}"></div>
             <div className="shape-top-center" style={{backgroundImage: 'url(/assets/img/shape/10.png)'}}></div>
             <div className="container">
