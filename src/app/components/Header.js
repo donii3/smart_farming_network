@@ -118,14 +118,6 @@ export default function Header(){
                                         <li><a href="blog-single-with-sidebar.html">Blog Single With Sidebar</a></li>
                                     </ul>
                                 </li>
-                                <li className="dropdown">
-                                    <a href="#" className="dropdown-toggle" data-toggle="dropdown" >Shop</a>
-                                    <ul className="dropdown-menu">
-                                        <li><a href="shop.html">Shop Product</a></li>
-                                        <li><a href="shop-single.html">Shop Single</a></li>
-                                        <li><a href="shop-single-thumb-only.html">Shop Single Version Two</a></li>
-                                    </ul>
-                                </li>
                             </ul>
                         </div>
                         
