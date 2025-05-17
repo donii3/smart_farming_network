@@ -14,7 +14,7 @@ export default function Footer(){
                             {/*<img className="logo" src="assets/img/logo-light.png" alt="Logo" /> */}
                             <h2>Smart Farming Network (SFN)</h2>
                             <p>
-                                Happen active county. Winding morning ambition shyness evident to poor. Because elderly new to the point to main success.
+                            Seamlessly connect with key stakeholders—buyers, suppliers, and investors—to expand your market reach and secure growth opportunities.
                             </p>
                             <form action="#">
                                 <input type="email" placeholder="Your Email" className="form-control" name="email" />
@@ -57,7 +57,7 @@ export default function Footer(){
                                 <li>
                                     <div className="thumb">
                                         <a href="blog-single-with-sidebar.html">
-                                            <img src="assets/img/800x800.png" alt="Thumb" />
+                                            <img src="assets/img/1.jpeg" alt="Thumb" />
                                         </a>
                                     </div>
                                     <div className="info">
@@ -70,14 +70,14 @@ export default function Footer(){
                                 <li>
                                     <div className="thumb">
                                         <a href="blog-single-with-sidebar.html">
-                                            <img src="assets/img/800x800.png" alt="Thumb" />
+                                            <img src="assets/img/4.jpeg" alt="Thumb" />
                                         </a>
                                     </div>
                                     <div className="info">
                                         <div className="meta-title">
                                             <span className="post-date">18 Jul, 2023</span>
                                         </div>
-                                        <h5><a href="blog-single-with-sidebar.html">Future Plan & Strategy for Consutruction </a></h5>
+                                        <h5><a href="blog-single-with-sidebar.html">SmartFarms with tailore IoT machine drones </a></h5>
                                     </div>
                                 </li>
                             </ul>

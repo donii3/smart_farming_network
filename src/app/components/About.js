@@ -7,7 +7,7 @@ export default function About(){
                 <div className="row align-center">
                     <div className="col-xl-6 col-lg-5">
                         <div className="about-style-one-thumb">
-                            <img src="/assets/img/800x1000.png" alt="Image Not Found" />
+                            <img src="/assets/img/55.jpeg" alt="Image Not Found" />
                             <div className="animation-shape">
                                 <img src="/assets/img/illustration/1.png" alt="Image Not Found" />
                             </div>
@@ -16,9 +16,9 @@ export default function About(){
                     <div className="col-xl-5 offset-xl-1 col-lg-6 offset-lg-1">
                         <div className="about-style-one-info">
                             
-                            <h2 className="title">Agriculture & Organic <br /> Product Farm</h2>
+                            <h2 className="title">Innovative Solutions Empowered Farming Transformative Impact</h2>
                             <p>
-                                There are many variations of passages of ipsum available but the majority have suffered alteration in some form by injected humor or random word which don’t look even. Comparison new ham melancholy.
+                            Experience unparalleled advancements in agriculture with Smart Farming Network (SFN). Our tailored services, from precision farming solutions to market connectivity, empower you to optimize operations and enhance productivity. Join us in pioneering the future of agriculture.
                             </p>
                             <div className="fun-fact-style-flex mt-35">
                                 <div className="counter">
