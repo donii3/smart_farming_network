@@ -1,9 +1,11 @@
 'use client';
+import Image from "next/image";
+
 
 
 export default function Footer(){
     return (
-        <footer className="bg-dark text-light" style={{backgroundImage: 'url(assets/img/shape/8.png)'}}>
+        <footer className="bg-dark text-light" style={{backgroundImage: 'url(/assets/img/shape/8.png)'}}>
         <div className="container">
             <div className="f-items default-padding">
                 <div className="row">
@@ -11,7 +13,7 @@ export default function Footer(){
                    
                     <div className="col-lg-4 col-md-6 item">
                         <div className="footer-item about">
-                            {/*<img className="logo" src="assets/img/logo-light.png" alt="Logo" /> */}
+                            {/*<Image  fill className="logo" src="/assets/img/logo-light.png" alt="Logo" /> */}
                             <h2>Smart Farming Network (SFN)</h2>
                             <p>
                             Seamlessly connect with key stakeholders—buyers, suppliers, and investors—to expand your market reach and secure growth opportunities.
@@ -57,7 +59,7 @@ export default function Footer(){
                                 <li>
                                     <div className="thumb">
                                         <a href="blog-single-with-sidebar.html">
-                                            <img src="assets/img/1.jpeg" alt="Thumb" />
+                                            <Image  width={50} height={50} src="/assets/img/1.jpeg" alt="Thumb" />
                                         </a>
                                     </div>
                                     <div className="info">
@@ -70,7 +72,7 @@ export default function Footer(){
                                 <li>
                                     <div className="thumb">
                                         <a href="blog-single-with-sidebar.html">
-                                            <img src="assets/img/4.jpeg" alt="Thumb" />
+                                            <Image  width={50} height={50} src="/assets/img/4.jpeg" alt="Thumb" />
                                         </a>
                                     </div>
                                     <div className="info">
@@ -131,7 +133,7 @@ export default function Footer(){
             </div>
         </div>
         <div className="shape-right-bottom">
-            <img src="assets/img/shape/7.png" alt="Image Not Found" />
+            <Image  width={50} height={50} src="/assets/img/shape/7.png" alt="Image Not Found" />
         </div>
     </footer>
     )

@@ -1,4 +1,6 @@
 'use client';
+import Image from "next/image";
+
 
 export default function About(){
     return (
@@ -7,9 +9,9 @@ export default function About(){
                 <div className="row align-center">
                     <div className="col-xl-6 col-lg-5">
                         <div className="about-style-one-thumb">
-                            <img src="/assets/img/55.jpeg" alt="Image Not Found" />
+                            <Image  fill src="/assets/img/55.jpeg" alt="Image Not Found" />
                             <div className="animation-shape">
-                                <img src="/assets/img/illustration/1.png" alt="Image Not Found" />
+                                <Image  fill src="/assets/img/illustration/1.png" alt="Image Not Found" />
                             </div>
                         </div>
                     </div>
@@ -30,7 +32,7 @@ export default function About(){
                             <ul className="top-feature">
                                 <li>
                                     <div className="icon">
-                                        <img src="/assets/img/icon/3.png" alt="Image Not Found" />
+                                        <Image  width={80} height={80} src="/assets/img/icon/3.png" alt="Image Not Found" />
                                     </div>
                                     <div className="info">
                                         <h4>100% Guaranteed Organic Product</h4>
@@ -41,7 +43,7 @@ export default function About(){
                                 </li>
                                 <li>
                                     <div className="icon">
-                                        <img src="/assets/img/icon/2.png" alt="Image Not Found" />
+                                        <Image  width={80} height={80} src="/assets/img/icon/2.png" alt="Image Not Found" />
                                     </div>
                                     <div className="info">
                                         <h4>Top-Quality Healthy Foods Production</h4>

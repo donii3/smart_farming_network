@@ -1,4 +1,6 @@
 'use client';
+import Image from "next/image";
+
 
 export default function Carousel(){
     return(
@@ -9,7 +11,7 @@ export default function Carousel(){
                     <div className="swiper-slide banner-style-one">
                         <div className="banner-thumb bg-cover shadow dark" style={{background: 'url(/assets/img/10.avif)'}}></div>
                         <div className="shape">
-                            <img src="/assets/img/shape/2.png" alt="Image Not Found" />
+                            <Image  fill src="/assets/img/shape/2.png" alt="Image Not Found" />
                         </div>
                         <div className="container">
                             <div className="row align-center">
@@ -42,7 +44,7 @@ export default function Carousel(){
                     <div className="swiper-slide banner-style-one">
                         <div className="banner-thumb bg-cover shadow dark" style={{background: 'url(/assets/img/3.jpeg)'}}></div>
                         <div className="shape">
-                            <img src="/assets/img/shape/2.png" alt="Image Not Found" />
+                            <Image  fill src="/assets/img/shape/2.png" alt="Image Not Found" />
                         </div>
                         <div className="container">
                             <div className="row align-center">

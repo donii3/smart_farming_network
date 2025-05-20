@@ -1,17 +1,19 @@
 'use client';
+import Image from "next/image";
+
 
 export default function Contact(){
     return (
         <div className="contact-area overflow-hidden bg-gray default-padding">
         <div className="sahpe-right-bottom">
-            <img src="/assets/img/shape/16.png" alt="Image Not Found" />
+            <Image  fill src="/assets/img/shape/16.png" alt="Image Not Found" />
         </div>
         <div className="container">
             <div className="row align-center">
                 
                 <div className="col-tact-stye-one col-xl-6 col-lg-7">
                     <div className="contact-form-style-one mb-md-50">
-                        <img src="/assets/img/illustration/10.png" alt="Image Not Found" />
+                        <Image  width={300} height={300} src="/assets/img/illustration/10.png" alt="Image Not Found" />
                         <h5 className="sub-title">Have Questions?</h5>
                         <h2 className="heading">Send us a massage</h2>
                         <form action="/assets/mail/contact.php" method="POST" className="contact-form contact-form">
