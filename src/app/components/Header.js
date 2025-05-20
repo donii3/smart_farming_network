@@ -1,4 +1,6 @@
 'use client';
+import Image from "next/image";
+
 
 export default function Header(){
     return(
@@ -61,14 +63,14 @@ export default function Header(){
                                     <i className="fa fa-bars"></i>
                                 </button>
                                 <a className="navbar-brand" href="index.html">
-                                    <img src="/assets/img/logo-mix.png" className="logo" alt="Logo" />
+                                    <Image width={50} height={50} src="/assets/img/logo-mix.png" className="logo" alt="Logo" />
                                 </a>
                             </div>
                         </div>
 
                         <div className="collapse navbar-collapse" id="navbar-menu">
 
-                            <img src="/assets/img/logo.png" alt="Logo" />
+                            <Image  fill src="/assets/img/logo.png" alt="Logo" />
                             <button type="button" className="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
                                 <i className="fa fa-times"></i>
                             </button>
@@ -136,7 +138,7 @@ export default function Header(){
                                             <li>
                                                 <div className="thumb">
                                                     <a href="#" className="photo">
-                                                        <img src="/assets/img/products/1.png" alt="Thumb" />
+                                                        <Image  fill src="/assets/img/products/1.png" alt="Thumb" />
                                                     </a>
                                                     <a href="#" className="remove-product">
                                                         <i className="fas fa-times"></i>
@@ -150,7 +152,7 @@ export default function Header(){
                                             <li>
                                                 <div className="thumb">
                                                     <a href="#" className="photo">
-                                                        <img src="/assets/img/products/2.png" alt="Thumb" />
+                                                        <Image  fill src="/assets/img/products/2.png" alt="Thumb" />
                                                     </a>
                                                     <a href="#" className="remove-product">
                                                         <i className="fas fa-times"></i>

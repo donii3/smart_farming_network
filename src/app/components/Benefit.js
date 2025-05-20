@@ -1,4 +1,5 @@
 'use client';
+import Image from "next/image";
 
 export default function Benefit(){
     return (
@@ -10,11 +11,11 @@ export default function Benefit(){
                     <div className="col-xl-6 col-lg-7">
                         <div className="benifit-items text-light">
                             <div className="shape">
-                                <img src="/assets/img/illustration/8.png" alt="Image Not Found" />
+                                <Image  fill src="/assets/img/illustration/8.png" alt="Image Not Found" />
                             </div>
                             <h2 className="title">Elevate Your Agricultural Operations with SFN</h2>
                             <p>
-                            SFN's innovative agri-tech platform transformed my farming practices with technology-driven solutions that truly made a difference.
+                            SFN&apos;s innovative agri-tech platform transformed my farming practices with technology-driven solutions that truly made a difference.
                             </p>
                             <ul className="list-standard">
                                 <li>Smart Farming Solutions</li>

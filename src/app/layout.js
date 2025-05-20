@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Script from "next/script";
 import "@/app/globals.css";
-
+import { Suspense } from 'react';
 import Preloader from "@/app/components/Preloader";
 import Footer from "@/app/components/Footer";
 import Header from "@/app/components/Header";
@@ -26,7 +26,9 @@ export default function RootLayout({
       </Head>
 
       <body suppressHydrationWarning>
-        <Preloader />
+        <Suspense fallback={null}>
+          <Preloader />
+        </Suspense>
        
         <Header />
         {children}
