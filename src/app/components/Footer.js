@@ -59,7 +59,7 @@ export default function Footer(){
                                 <li>
                                     <div className="thumb">
                                         <a href="blog-single-with-sidebar.html">
-                                            <Image  fill src="/assets/img/1.jpeg" alt="Thumb" />
+                                            <Image  width={50} height={50} src="/assets/img/1.jpeg" alt="Thumb" />
                                         </a>
                                     </div>
                                     <div className="info">
@@ -72,7 +72,7 @@ export default function Footer(){
                                 <li>
                                     <div className="thumb">
                                         <a href="blog-single-with-sidebar.html">
-                                            <Image  fill src="/assets/img/4.jpeg" alt="Thumb" />
+                                            <Image  width={50} height={50} src="/assets/img/4.jpeg" alt="Thumb" />
                                         </a>
                                     </div>
                                     <div className="info">
@@ -133,7 +133,7 @@ export default function Footer(){
             </div>
         </div>
         <div className="shape-right-bottom">
-            <Image  fill src="/assets/img/shape/7.png" alt="Image Not Found" />
+            <Image  width={50} height={50} src="/assets/img/shape/7.png" alt="Image Not Found" />
         </div>
     </footer>
     )

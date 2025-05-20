@@ -19,42 +19,42 @@ export default function Product(){
                                 <div className="product-list-box">
                                     <div className="product-list-item">
                                         <a href="services-details.html">
-                                            <Image  fill src="/assets/img/icon/9.png" alt="Icon" />
+                                            <Image  width={50} height={50} src="/assets/img/icon/9.png" alt="Icon" />
                                             <h5>Blueberry</h5>
                                         </a>
                                     </div>
                                     
                                     <div className="product-list-item">
                                         <a href="services-details.html">
-                                            <Image  fill src="/assets/img/icon/10.png" alt="Icon" />
+                                            <Image  width={50} height={50} src="/assets/img/icon/10.png" alt="Icon" />
                                             <h5>Strawberry</h5>
                                         </a>
                                     </div>
                                     
                                     <div className="product-list-item">
                                         <a href="services-details.html">
-                                            <Image  fill src="/assets/img/icon/11.png" alt="Icon" />
+                                            <Image  width={50} height={50} src="/assets/img/icon/11.png" alt="Icon" />
                                             <h5>Cabbage</h5>
                                         </a>
                                     </div>
                                     
                                     <div className="product-list-item">
                                         <a href="services-details.html">
-                                            <Image  fill src="/assets/img/icon/12.png" alt="Icon" />
+                                            <Image  width={50} height={50} src="/assets/img/icon/12.png" alt="Icon" />
                                             <h5>Maize</h5>
                                         </a>
                                     </div>
                                    
                                     <div className="product-list-item">
                                         <a href="services-details.html">
-                                            <Image  fill src="/assets/img/icon/13.png" alt="Icon" />
+                                            <Image  width={50} height={50} src="/assets/img/icon/13.png" alt="Icon" />
                                             <h5>Orange</h5>
                                         </a>
                                     </div>
                                     
                                     <div className="product-list-item">
                                         <a href="services-details.html">
-                                            <Image  fill src="/assets/img/icon/14.png" alt="Icon" />
+                                            <Image  width={50} height={50} src="/assets/img/icon/14.png" alt="Icon" />
                                             <h5>Apples</h5>
                                         </a>
                                     </div>

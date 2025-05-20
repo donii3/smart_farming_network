@@ -13,7 +13,7 @@ export default function Contact(){
                 
                 <div className="col-tact-stye-one col-xl-6 col-lg-7">
                     <div className="contact-form-style-one mb-md-50">
-                        <Image  fill src="/assets/img/illustration/10.png" alt="Image Not Found" />
+                        <Image  width={300} height={300} src="/assets/img/illustration/10.png" alt="Image Not Found" />
                         <h5 className="sub-title">Have Questions?</h5>
                         <h2 className="heading">Send us a massage</h2>
                         <form action="/assets/mail/contact.php" method="POST" className="contact-form contact-form">

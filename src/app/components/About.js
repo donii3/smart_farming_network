@@ -32,7 +32,7 @@ export default function About(){
                             <ul className="top-feature">
                                 <li>
                                     <div className="icon">
-                                        <Image  fill src="/assets/img/icon/3.png" alt="Image Not Found" />
+                                        <Image  width={80} height={80} src="/assets/img/icon/3.png" alt="Image Not Found" />
                                     </div>
                                     <div className="info">
                                         <h4>100% Guaranteed Organic Product</h4>
@@ -43,7 +43,7 @@ export default function About(){
                                 </li>
                                 <li>
                                     <div className="icon">
-                                        <Image  fill src="/assets/img/icon/2.png" alt="Image Not Found" />
+                                        <Image  width={80} height={80} src="/assets/img/icon/2.png" alt="Image Not Found" />
                                     </div>
                                     <div className="info">
                                         <h4>Top-Quality Healthy Foods Production</h4>

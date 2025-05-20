@@ -21,7 +21,7 @@ export default function Service(){
                     <div className="col-lg-4 col-md-6 service-one-single">
                         <div className="service-style-one-item">
                             <div className="thumb">
-                                <Image  fill src="/assets/img/illustration/2.png" alt="Image Not Found" />
+                                <Image  width={100} height={80} src="/assets/img/illustration/2.png" alt="Image Not Found" />
                             </div>
                             <div className="info">
                                 <div className="top">
@@ -38,7 +38,7 @@ export default function Service(){
                     <div className="col-lg-4 col-md-6 service-one-single">
                         <div className="service-style-one-item">
                             <div className="thumb">
-                                <Image  fill src="/assets/img/illustration/3.png" alt="Image Not Found" />
+                                <Image  width={100} height={80} src="/assets/img/illustration/3.png" alt="Image Not Found" />
                             </div>
                             <div className="info">
                                 <div className="top">
@@ -55,7 +55,7 @@ export default function Service(){
                     <div className="col-lg-4 col-md-6 service-one-single">
                         <div className="service-style-one-item">
                             <div className="thumb">
-                                <Image  fill src="/assets/img/illustration/4.png" alt="Image Not Found" />
+                                <Image  width={100} height={80} src="/assets/img/illustration/4.png" alt="Image Not Found" />
                             </div>
                             <div className="info">
                                 <div className="top">
