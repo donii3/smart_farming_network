@@ -47,7 +47,7 @@ export default function TermsAndConditions() {
                 <section>
                     <h2 className="text-xl font-semibold text-green-600 mb-3">4. Data Accuracy & Liability</h2>
                     <p className="text-gray-700">
-                        SFN uses advanced AI and real-time data; however, we cannot guarantee 100% accuracy. You use the insights and tools at your own discretion. SFN is not liable for any loss, damage, or farming decision made solely based on the platform's advice.
+                        SFN uses advanced AI and real-time data; however, we cannot guarantee 100% accuracy. You use the insights and tools at your own discretion. SFN is not liable for any loss, damage, or farming decision made solely based on the platform&apos;s advice.
                     </p>
                 </section>
 
