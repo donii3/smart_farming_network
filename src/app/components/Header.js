@@ -63,7 +63,7 @@ export default function Header(){
                                     <i className="fa fa-bars"></i>
                                 </button>
                                 <a className="navbar-brand" href="index.html">
-                                    <Image width={50} height={50} src="/assets/img/logo-mix.png" className="logo" alt="Logo" />
+                                    <Image width={50} height={40} src="/assets/img/logo-mix.png" className="logo" alt="Logo" />
                                 </a>
                             </div>
                         </div>
