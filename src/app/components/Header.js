@@ -87,7 +87,7 @@ export default function Header(){
                                 <li className="dropdown">
                                     <a href="#" className="dropdown-toggle" data-toggle="dropdown" >Pages</a>
                                     <ul className="dropdown-menu">
-                                        <li><a href="about-us.html">About Us</a></li>
+                                        <li><a href="/about">About Us</a></li>
                                         <li><a href="farmers.html">Team</a></li>
                                         <li><a href="farmer-details.html">Team Details</a></li>
                                         <li><a href="contact.html">Contact Us</a></li>
