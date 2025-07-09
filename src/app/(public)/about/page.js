@@ -27,7 +27,7 @@ export default function AboutUsPage() {
               trusted markets. It bridges the gap between rural fields and
               digital tools, building a future where farming is no longer a
               struggle—but a sustainable and prosperous lifestyle. SFN is not
-              just an app. It’s a movement—raising a new generation of African
+              just an app. It&apos;s a movement—raising a new generation of African
               farmers, equipped with truth, integrity, and innovation.
             </p>
           </div>
@@ -42,12 +42,12 @@ export default function AboutUsPage() {
               GoodLife Company, a mother venture focused on purpose & innovation
               across various sectors including farming, food, and lifestyle. As
               the creator of the Smart Farming Network, Edward believes that
-              Africa’s true wealth lies in its land and people and by that
+              Africa&apos;s true wealth lies in its land and people and by that
               merging digital intelligence, we can redeem the narrative of
               farming for generations to come. With deep roots in leadership,
               branding, and ministry, he is passionate about raising ethical
               businesses that glorify God while serving humanity. SFN is one of
-              his many efforts to birth what he calls the ehdillionaire's
+              his many efforts to birth what he calls the ehdillionaire&apos;s
               Generation—a people made wealthy from wealthy ideas on purpose.
             </p>
           </div>
@@ -68,11 +68,11 @@ export default function AboutUsPage() {
         <div className="container">
           <p className="fs-5 text-center">
             “Redefining and revolutionizing the traditional method of Farming in
-            the African continent” <br /> With Goody.Ai in every farmer’s
-            pocket, and SFN as the bridge, this vision is not futuristic it’s
+            the African continent” <br /> With Goody.Ai in every farmer&apos;s
+            pocket, and SFN as the bridge, this vision is not futuristic it&apos;s
             here.
             <br /> Goodlife Smart farming network <br />
-            Tagline: "The Amazon of African's Farming"
+            Tagline: &quot;The Amazon of African&apos;s Farming&quot;
           </p>
         </div>
       </div>
