@@ -4,7 +4,7 @@ export default function TermsAndConditions() {
     return (
         <div className="container mx-auto px-4 py-8">
             <h1 className="text-3xl font-bold text-green-700 mb-6">TERMS & CONDITIONS</h1>
-            <p className="text-gray-600 mb-8">Effective Date: {new Date().toLocaleDateString()}</p>
+            <p suppressHydrationWarning className="text-gray-600 mb-8">Effective Date: {new Date().toLocaleDateString()}</p>
             
             <p className="mb-6 text-lg">
                 Welcome to the Smart Farming Network (SFN) platform. By accessing or using our app, services, website, or AgriGo chatbot, you agree to be bound by the following Terms and Conditions.
