@@ -11,6 +11,8 @@
   "dependencies": {
     "@prisma/client": "^6.13.0",
     "next": "15.2.4",
+    "@auth/core": "^0.40.0",
+    "next-auth": "^5.0.0-beta.29",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
   },
