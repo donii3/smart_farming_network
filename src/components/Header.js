@@ -1,5 +1,6 @@
 'use client';
 import Image from "next/image";
+import Link from "next/link";
 
 
 export default function Header(){
@@ -79,15 +80,14 @@ export default function Header(){
                                 <li className="dropdown">
                                     <a href="#" className="dropdown-toggle active" data-toggle="dropdown" >Home</a>
                                     <ul className="dropdown-menu">
-                                        <li><a href="index.html">Home Agriculture</a></li>
-                                        <li><a href="index-2.html">Home Farming</a></li>
-                                        <li><a href="index-3.html">Agriculture Shop</a></li>
+                                        <li><Link href="/">Home Agriculture</Link></li>
                                     </ul>
                                 </li>
                                 <li className="dropdown">
                                     <a href="#" className="dropdown-toggle" data-toggle="dropdown" >Pages</a>
                                     <ul className="dropdown-menu">
-                                        <li><a href="/about">About Us</a></li>
+                                        <li><Link href="/about">About Us</Link></li>
+                                        <li><Link href="/login">Login</Link></li>
                                         <li><a href="farmers.html">Team</a></li>
                                         <li><a href="farmer-details.html">Team Details</a></li>
                                         <li><a href="contact.html">Contact Us</a></li>
@@ -170,7 +170,7 @@ export default function Header(){
                                             </li>
                                         </ul>
                                     </li>
-                                    <li className="button"><a href="#">Register</a></li>
+                                    <li className="button"><Link href="/register">Register</Link></li>
                                 </ul>
                             </div>
 
