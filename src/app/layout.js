@@ -6,6 +6,7 @@ import "@/app/globals.css";
 import ClientScripts from "@/components/ClientScripts";
 import Script from "next/script";
 
+import { SessionProvider } from 'next-auth/react';
 
 export default function RootLayout({ children }) {
   return (
@@ -18,7 +19,9 @@ export default function RootLayout({ children }) {
       </head>
       <body>        
         <div id="app-root">
-          {children}
+          <SessionProvider>
+            {children}
+          </SessionProvider>
           <ClientScripts />
         </div>
       </body>
