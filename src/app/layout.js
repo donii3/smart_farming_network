@@ -4,14 +4,16 @@ import "@/app/globals.css";
 //   description: "A smart agricultural application",
 // };
 import ClientScripts from "@/components/ClientScripts";
-
+import { SessionProvider } from 'next-auth/react';
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>        
         <div id="app-root">
-          {children}
+          <SessionProvider>
+            {children}
+          </SessionProvider>
           <ClientScripts />
         </div>
       </body>
