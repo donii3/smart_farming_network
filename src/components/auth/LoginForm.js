@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { useRouter, useSearchParams } from 'next/navigation';
 import { useState } from 'react';
 import { signIn } from 'next-auth/react';
+import { ConfirmationModal } from '@/components/ConfirmationModal';
 
 
 export default function LoginForm() {
@@ -16,6 +17,11 @@ export default function LoginForm() {
 
   const callbackUrl = searchParams.get('callbackUrl') || '/';
   const errorParam = searchParams.get('error');
+
+  // Modal state
+  const [showSuccessModal, setShowSuccessModal] = useState(false);
+  const [processData, setProcessData] = useState(null);
+
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -34,13 +40,21 @@ export default function LoginForm() {
       if (res?.error) {
         setError('Invalid email or password');
       } else if (res?.ok) {
-        router.push(callbackUrl);
+
+        setProcessData(res.url);
+        setShowSuccessModal(true);
+
       }
     } catch (err) {
       setError('An unexpected error occurred');
     } finally {
       setLoading(false);
     }
+  };
+
+  const handleSuccessConfirm = () => {
+    setShowSuccessModal(false);
+    router.push(callbackUrl);
   };
 
   return (
@@ -95,10 +109,21 @@ export default function LoginForm() {
                       </div>
                     </div>
                     <div className="col-lg-12">
-                      <button type="submit" className="btn btn-primary">
-                        Login Now
+                      <button
+                        type="submit"
+                        className="btn btn-primary"
+                        disabled={loading}
+                      >
+                        {loading ? (
+                          <>
+                            <span className="spinner-border spinner-border-sm me-2" role="status" aria-hidden="true"></span>
+                            Logging in...
+                          </>
+                        ) : 'Login Now'}
                       </button>
                     </div>
+
+
                     <div className="col-lg-12">
                       <p className="register-link">
                         Don&apos;t have an account?{' '}
@@ -112,6 +137,23 @@ export default function LoginForm() {
           </div>
         </div>
       </div>
+
+      {/* Success Confirmation Modal */}
+      <ConfirmationModal
+        isOpen={showSuccessModal}
+        title="Logic Successful!"
+        message={
+          <>
+            <p>You&apos;ll now be redirected to home page.</p>
+          </>
+        }
+        confirmText="Continue.."
+        onConfirm={handleSuccessConfirm}
+        onCancel={() => setShowSuccessModal(false)}
+        confirmButtonVariant="primary"
+        isLoading={loading}
+        showCancelButton={false} // Optional: Hide cancel button for success modal
+      />
     </div>
   );
 }
