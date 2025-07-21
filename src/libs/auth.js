@@ -1,6 +1,7 @@
 import NextAuth from "next-auth";
 import Credentials from "next-auth/providers/credentials";
 import { dummyUsers } from "@/app/data/dummyUser";
+import bcrypt from 'bcryptjs';
 
 export const { handlers, signIn, signOut, auth } = NextAuth({
   providers: [
@@ -9,17 +10,37 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
         email: { label: "Email", type: "text" },
         password: { label: "Password", type: "password" }
       },
-      authorize: async (credentials) => {       
-
+       authorize: async (credentials) => {       
         try {
-          if (!credentials?.email || !credentials?.password) return null;
+          // Validate credentials exist
+          if (!credentials?.email || !credentials?.password) {
+            throw new Error('Email and password are required');
+          }
+
+          // Find user
           const user = dummyUsers.find(user => 
-            user.email === credentials.email &&
-            user.password === credentials.password
+            user.email === credentials.email
           );
-          if (!user) throw new Error('Invalid Email or password');
+          
+          if (!user) {
+            throw new Error('Invalid email or password');
+          }
+
+          // Compare passwords (use async version)
+          const passwordMatch = await bcrypt.compare(
+            credentials.password,
+            user.password
+          );
+
+          if (!passwordMatch) {
+            throw new Error('Invalid email or password');
+          }
+
+          // Return user object if everything checks out
           return user;
+          
         } catch (error) {
+          console.error('Authentication error:', error.message);
           return null;
         }
       }
