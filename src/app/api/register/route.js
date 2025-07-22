@@ -30,8 +30,6 @@ export async function POST(req) {
         phone,
       });
 
-      console.log(user)
-
 
     return NextResponse.json({ success: true, message: "user created successfully" }, {status: 201});
   } catch (error) {
