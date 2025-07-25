@@ -1,7 +1,9 @@
+'use client';
+
 import Preloader from "@/components/Preloader";
 
 
-export default function loading() {
+export default function Loading() {
 
   return (
     <Preloader />

@@ -4,12 +4,12 @@ import { Suspense } from "react";
 import Preloader from "@/components/Preloader";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import loading from "../loading";
+import Loading from "../loading";
 
 export default function PublicLayout({ children }) {
   return (
     <div id="public-layout">
-      <Suspense fallback={<loading />}>      
+      <Suspense fallback={<Loading />}>      
         <Preloader />
       </Suspense>
       <Header />
