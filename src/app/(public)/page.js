@@ -1,7 +1,28 @@
 'use client';
 import Image from "next/image";
+import { useEffect } from "react";
 
 export default function Home() {
+
+  useEffect(() => {
+    if (typeof window !== "undefined" && window.Swiper) {
+      new window.Swiper(".banner-fade", {
+        direction: "horizontal",
+        loop: true,
+        effect: "fade",
+        fadeEffect: { crossFade: true },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev"
+        },
+        pagination: {
+          el: '.banner-pagination',
+          clickable: true,
+        },
+      });
+    }
+  }, []);
+
   return (
 
     <div>
@@ -11,49 +32,31 @@ export default function Home() {
         <div className="banner-fade">
           <div className="swiper-wrapper">
 
-            {/* Slide 1 */}
             <div className="swiper-slide banner-style-one">
-              <div
-                className="banner-thumb bg-cover shadow dark"
-                style={{ background: 'url(/assets/img/10.avif)' }}
-                role="img"
-                aria-label="Agricultural field with smart farming technology"
-              ></div>
-              
+              <div className="banner-thumb bg-cover shadow dark" style={{ background: 'url(/assets/img/10.avif)' }}></div>
+              <div className="shape">
+                <Image fill src="/assets/img/shape/2.png" alt="Image Not Found" />
+              </div>
               <div className="container">
                 <div className="row align-center">
                   <div className="col-xl-9">
                     <div className="content">
                       <div className="badge">
                         <div className="curve-text">
-                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 150" version="1.1" aria-hidden="true">
-                            <path id="textPath1" d="M 0,75 a 75,75 0 1,1 0,1 z"></path>
-                            <text>
-                              <textPath href="#textPath1">100% Smart Solutions</textPath>
-                            </text>
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 150" version="1.1">
+                            <path id="textPath" d="M 0,75 a 75,75 0 1,1 0,1 z"></path>
+                            <text><textPath href="#textPath">100% Smart Solutions</textPath></text>
                           </svg>
-                          <a
-                            href="https://www.youtube.com/watch?v=ipUuoMCEbDQ"
-                            className="popup-youtube"
-                            aria-label="Watch our smart solutions video"
-                          >
-                            <i className="fas fa-arrow-right"></i>
-                          </a>
+                          <a href="https://www.youtube.com/watch?v=ipUuoMCEbDQ" className="popup-youtube"><i className="fas fa-arrow-right"></i></a>
                         </div>
                       </div>
                       <div className="info">
-                        <h1 className="banner-title">Elevate Your Agricultural Operations with SFN</h1>
+                        <h2>Elevate Your Agricultural Operations with SFN</h2>
                         <p>
                           Experience unparalleled advancements in agriculture with Smart Farming Network (SFN).
                         </p>
                         <div className="button">
-                          <a
-                            className="btn btn-theme btn-md radius animation"
-                            href="about-us.html"
-                            aria-label="Learn more about our agricultural solutions"
-                          >
-                            Discover More
-                          </a>
+                          <a className="btn btn-theme btn-md radius animation" href="about-us.html">Discover More</a>
                         </div>
                       </div>
                     </div>
@@ -62,22 +65,10 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Slide 2 */}
             <div className="swiper-slide banner-style-one">
-              <div
-                className="banner-thumb bg-cover shadow dark"
-                style={{ background: 'url(/assets/img/3.jpeg)' }}
-                role="img"
-                aria-label="Farm using advanced agricultural technology"
-              ></div>
-              <div className="shape" style={{ position: 'relative' }}>
-                <Image
-                  width={100}
-                  height={100}
-                  src="/assets/img/shape/2.png"
-                  alt="Decorative shape background"
-                  sizes="100vw"
-                />
+              <div className="banner-thumb bg-cover shadow dark" style={{ background: 'url(/assets/img/3.jpeg)' }}></div>
+              <div className="shape">
+                <Image fill src="/assets/img/shape/2.png" alt="Image Not Found" />
               </div>
               <div className="container">
                 <div className="row align-center">
@@ -85,34 +76,20 @@ export default function Home() {
                     <div className="content">
                       <div className="badge">
                         <div className="curve-text">
-                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 150" version="1.1" aria-hidden="true">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 150" version="1.1">
                             <path id="textPath2" d="M 0,75 a 75,75 0 1,1 0,1 z"></path>
-                            <text>
-                              <textPath href="#textPath2">100% Agricultural & Tech</textPath>
-                            </text>
+                            <text><textPath href="#textPath">100% Agricultural & Tech</textPath></text>
                           </svg>
-                          <a
-                            href="https://www.youtube.com/watch?v=ipUuoMCEbDQ"
-                            className="popup-youtube"
-                            aria-label="Watch our agricultural technology video"
-                          >
-                            <i className="fas fa-arrow-right"></i>
-                          </a>
+                          <a href="https://www.youtube.com/watch?v=ipUuoMCEbDQ" className="popup-youtube"><i className="fas fa-arrow-right"></i></a>
                         </div>
                       </div>
                       <div className="info">
-                        <h1 className="banner-title">Transform Your Agricultural Experience with Smart Solutions</h1>
+                        <h2>Transform Your Agricultural Experience with Smart Solutions</h2>
                         <p>
                           Implement our cutting-edge techniques to enhance crop yields and streamline farm management with real-time data insights.
                         </p>
                         <div className="button">
-                          <a
-                            className="btn btn-theme btn-md radius animation"
-                            href="about-us.html"
-                            aria-label="Learn more about our smart farming solutions"
-                          >
-                            Discover More
-                          </a>
+                          <a className="btn btn-theme btn-md radius animation" href="about-us.html">Discover More</a>
                         </div>
                       </div>
                     </div>
@@ -123,17 +100,8 @@ export default function Home() {
 
           </div>
 
-          {/* Navigation Arrows */}
-          <div
-            className="swiper-button-prev"
-            aria-label="Previous slide"
-            role="button"
-          ></div>
-          <div
-            className="swiper-button-next"
-            aria-label="Next slide"
-            role="button"
-          ></div>
+          <div className="swiper-button-prev"></div>
+          <div className="swiper-button-next"></div>
 
         </div>
       </div>
