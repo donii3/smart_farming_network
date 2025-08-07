@@ -1,11 +1,16 @@
 'use client';
-import Image from "next/image";
+import { signOut, useSession } from 'next-auth/react';
+import { useState } from 'react';
+import Link from 'next/link';
+import Image from 'next/image';
+import { Logout } from './Logout';
 
 
-export default function Header(){
-    return(
+export default function Header() {
+    const { data: session } = useSession();
+    return (
 
-         <div>
+        <div>
             {/** START HEADER TOP */}
             <div className="top-bar-area top-bar-style-one bg-dark text-light">
                 <div className="container">
@@ -55,8 +60,8 @@ export default function Header(){
                 <nav className="navbar mobile-sidenav inc-shape navbar-sticky navbar-default validnavs dark">
 
                     <div className="container d-flex justify-content-between align-items-center">
-                        
-                        
+
+
                         <div className="navbar-brand-left">
                             <div className="navbar-header">
                                 <button type="button" className="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
@@ -70,24 +75,23 @@ export default function Header(){
 
                         <div className="collapse navbar-collapse" id="navbar-menu">
 
-                            <Image  fill src="/assets/img/logo.png" alt="Logo" />
+                            <Image fill src="/assets/img/logo.png" alt="Logo" />
                             <button type="button" className="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
                                 <i className="fa fa-times"></i>
                             </button>
-                            
+
                             <ul className="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
                                 <li className="dropdown">
                                     <a href="#" className="dropdown-toggle active" data-toggle="dropdown" >Home</a>
                                     <ul className="dropdown-menu">
-                                        <li><a href="index.html">Home Agriculture</a></li>
-                                        <li><a href="index-2.html">Home Farming</a></li>
-                                        <li><a href="index-3.html">Agriculture Shop</a></li>
+                                        <li><Link href="/">Home Agriculture</Link></li>
                                     </ul>
                                 </li>
                                 <li className="dropdown">
                                     <a href="#" className="dropdown-toggle" data-toggle="dropdown" >Pages</a>
                                     <ul className="dropdown-menu">
-                                        <li><a href="/about">About Us</a></li>
+                                        <li><Link href="/about">About Us</Link></li>
+                                        <li><Link href="/login">Login</Link></li>
                                         <li><a href="farmers.html">Team</a></li>
                                         <li><a href="farmer-details.html">Team Details</a></li>
                                         <li><a href="contact.html">Contact Us</a></li>
@@ -122,13 +126,13 @@ export default function Header(){
                                 </li>
                             </ul>
                         </div>
-                        
+
                         {/*<!-- /.navbar-collapse -->*/}
 
                         <div className="attr-right">
                             <div className="attr-nav">
                                 <ul>
-                                    
+
                                     <li className="dropdown">
                                         <a href="#" className="dropdown-toggle" data-toggle="dropdown" >
                                             <i className="far fa-shopping-cart"></i>
@@ -138,7 +142,7 @@ export default function Header(){
                                             <li>
                                                 <div className="thumb">
                                                     <a href="#" className="photo">
-                                                        <Image  fill src="/assets/img/products/1.png" alt="Thumb" />
+                                                        <Image fill src="/assets/img/products/1.png" alt="Thumb" />
                                                     </a>
                                                     <a href="#" className="remove-product">
                                                         <i className="fas fa-times"></i>
@@ -152,7 +156,7 @@ export default function Header(){
                                             <li>
                                                 <div className="thumb">
                                                     <a href="#" className="photo">
-                                                        <Image  fill src="/assets/img/products/2.png" alt="Thumb" />
+                                                        <Image fill src="/assets/img/products/2.png" alt="Thumb" />
                                                     </a>
                                                     <a href="#" className="remove-product">
                                                         <i className="fas fa-times"></i>
@@ -170,17 +174,25 @@ export default function Header(){
                                             </li>
                                         </ul>
                                     </li>
-                                    <li className="button"><a href="#">Register</a></li>
+                                    {session ? (
+                                        <li>
+                                            <Logout className="px-4 py-2 bg-red-500 text-white rounded hover:bg-red-600" />
+                                        </li>
+                                    ) : (
+                                        <li className="button">
+                                            <Link href="/register">Register</Link>
+                                        </li>
+                                    )}
                                 </ul>
                             </div>
 
                         </div>
 
-                    </div>   
+                    </div>
                     <div className="overlay-screen"></div>
 
                 </nav>
-            </header> 
-         </div>
+            </header>
+        </div>
     )
 }
