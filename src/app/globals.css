@@ -1,12 +1,23 @@
-@import url("/assets/css/animate.min.css");
-@import url("/assets/css/bootstrap.min.css");
-@import url("/assets/css/flaticon-set.css");
-@import url("/assets/css/font-awesome.min.css");
-@import url("/assets/css/helper.css");
-@import url("/assets/css/magnific-popup.css");
-@import url("/assets/css/shop.css");
-@import url("/assets/css/style.css");
-@import url("/assets/css/swiper-bundle.min.css");
-@import url("/assets/css/unit-test.css");
-@import url("/assets/css/validnavs.css");
+/* 1. Core CSS Libraries */
+@import url("/assets/css/bootstrap.min.css"); /* Framework base */
+@import url("/assets/css/font-awesome.min.css"); /* Icon library */
+@import url("/assets/css/flaticon-set.css"); /* Additional icons */
+
+/* 2. Helper/Utility Classes */
+@import url("/assets/css/helper.css"); /* Should come after framework */
+@import url("/assets/css/unit-test.css"); /* Testing/utility classes */
+
+/* 3. Animation Libraries */
+@import url("/assets/css/animate.min.css"); /* Animation classes */
+
+/* 4. Component Libraries */
+@import url("/assets/css/magnific-popup.css"); /* Lightbox/Modal */
+@import url("/assets/css/swiper-bundle.min.css"); /* Slider/Carousel */
+@import url("/assets/css/shop.css"); /* E-commerce components */
+
+/* 5. Navigation */
+@import url("/assets/css/validnavs.css"); /* Navigation styles */
+
+/* 6. Main Theme Styles (should override all above) */
+@import url("/assets/css/style.css"); /* Your custom styles LAST */
 
