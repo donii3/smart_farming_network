@@ -100,9 +100,9 @@ export default function LoginForm() {
                       </div>
                     </div>
                     <div className="col-lg-12">
-                      <div className="form-group remember">
+                      <div className="form-group remember d-flex align-items-center">
                         <input type="checkbox" id="remember" />
-                        <label htmlFor="remember">Remember me</label>
+                        <label className='mx-1 mb-0' htmlFor="remember">Remember me</label>
                         <Link href="#" className="forgot-pass">
                           Forgot password?
                         </Link>
