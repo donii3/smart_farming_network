@@ -1,12 +1,9 @@
-import { useEffect, useState } from 'react';
-import { usePathname, useSearchParams } from 'next/navigation';
+'use client';
+import { useEffect } from "react";
 
 export function usePreloader() {
-  const [isLoading, setIsLoading] = useState(true);
-  const pathname = usePathname();
-  const searchParams = useSearchParams();
 
-  useEffect(() => {
+    useEffect(() => {
     const hidePreloader = () => {
       const preloader = document.getElementById('agrica-preloader');
       const mainPreloader = document.getElementById('preloader');
@@ -23,8 +20,6 @@ export function usePreloader() {
           }, 500);
         }
       }, 900);
-
-      setIsLoading(false);
     };
 
     if (document.readyState === 'complete') {
@@ -33,10 +28,7 @@ export function usePreloader() {
       window.addEventListener('load', hidePreloader);
     }
 
-    return () => {
-      window.removeEventListener('load', hidePreloader);
-    };
-  }, [pathname, searchParams]);
+    return () => window.removeEventListener('load', hidePreloader);
+  }, []);
 
-  return isLoading;
 }

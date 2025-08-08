@@ -6,15 +6,17 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Loading from "../loading";
 
-export default function PublicLayout({ children }) {
+
+export default function AuthLayout({ children }) {
   return (
-    <div id="public-layout">
-      <Suspense fallback={<Loading />}>      
+    <div id="auth-layout">
+      <Suspense fallback={<Loading />}>
         <Preloader />
       </Suspense>
       <Header />
       {children}
       <Footer />
+      
 
     </div>
   );

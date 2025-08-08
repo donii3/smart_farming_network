@@ -1,9 +1,30 @@
 'use client';
 import Image from "next/image";
+import { useEffect } from "react";
 
 export default function Home() {
+
+  useEffect(() => {
+    if (typeof window !== "undefined" && window.Swiper) {
+      new window.Swiper(".banner-fade", {
+        direction: "horizontal",
+        loop: true,
+        effect: "fade",
+        fadeEffect: { crossFade: true },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev"
+        },
+        pagination: {
+          el: '.banner-pagination',
+          clickable: true,
+        },
+      });
+    }
+  }, []);
+
   return (
-    
+
     <div>
 
       {/* CAROUSEL SECTION */}
@@ -84,14 +105,13 @@ export default function Home() {
 
         </div>
       </div>
-
       {/* ABOUT SECTION */}
       <div className="about-style-one-area default-padding overflow-hidden">
         <div className="container">
           <div className="row align-center">
             <div className="col-xl-6 col-lg-5">
               <div className="about-style-one-thumb">
-                <Image fill src="/assets/img/55.jpeg" alt="Image Not Found" />
+                <Image width={800} height={800} src="/assets/img/55.jpeg" alt="Image Not Found" />
                 <div className="animation-shape">
                   <Image fill src="/assets/img/illustration/1.png" alt="Image Not Found" />
                 </div>
@@ -239,7 +259,7 @@ export default function Home() {
         </div>
       </div>
 
-      
+
       {/* PRODUCT SECTION */}
       <div className="product-cat-area default-padding">
         <div className="shape-right-bottom-mini">
