@@ -145,9 +145,9 @@ export default function RegisterForm() {
                                             </div>
                                         </div>
                                         <div className="col-lg-12">
-                                            <div className="form-group terms">
+                                            <div className="form-group terms d-flex align-items-center">
                                                 <input type="checkbox" id="terms" required />
-                                                <label htmlFor="terms">
+                                                <label className="mx-1 mb-0" htmlFor="terms">
                                                     I agree to the <Link href="/terms-conditions">Terms of Service</Link> and <Link href="/privacy-policy">Privacy Policy</Link>
                                                 </label>
                                             </div>
