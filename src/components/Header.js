@@ -89,7 +89,7 @@ export default function Header() {
                                     <ul className="dropdown-menu">
                                         <li><Link href="/about">About Us</Link></li>
                                         <li><Link href="/content-details">Content Details</Link></li>
-                                        <li><Link href="contact.html">Contact Us</Link></li>
+                                        <li><Link href="/contact">Contact Us</Link></li>
                                     </ul>
                                 </li>
                                 
