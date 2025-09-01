@@ -2726,7 +2726,7 @@ a.btn-round-animation.dark {
 	width: 45px;
 	line-height: 45px;
 	text-align: center;
-	font-size: 52px;
+	font-size: 30px;
 	-webkit-text-stroke: 1px var(--white);
 	color: transparent;
 }
@@ -2738,7 +2738,7 @@ a.btn-round-animation.dark {
 .curve-text svg text {
 	fill: var(--white);
 	letter-spacing: 7px;
-	font-family: var(--font-secondary);
+	/* font-family: var(--font-secondary); */
 }
 
 
@@ -3135,7 +3135,7 @@ a.btn-round-animation.dark {
     # Banner Styles
 =================================================================== */
 .banner-area {
-	height: 100vh;
+	height: 85vh;
 	width: 100vw;
 	position: relative;
 }
@@ -3907,6 +3907,7 @@ a.btn-round-animation.dark {
 	background: var(--color-secondary);
 	border-radius: 50%;
 	padding: 15px;
+	padding-top: 10px;
 	animation: spinner 30s infinite linear;
 	max-width: 200px;
 }
@@ -3921,9 +3922,9 @@ a.btn-round-animation.dark {
 }
 
 .banner-style-one .content h2 {
-	font-size: 60px;
-	font-family: var(--font-secondary);
-	font-size: 90px;
+	font-size: 65px;
+	/* font-family: var(--font-secondary); */
+	/* font-size: 90px; */
 	letter-spacing: 3px;
 	margin-bottom: 30px;
 }
