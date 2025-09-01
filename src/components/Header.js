@@ -57,9 +57,9 @@ export default function Header() {
 
             {/** HEADER */}
             <header>
-                <nav className="navbar mobile-sidenav inc-shape navbar-sticky navbar-default validnavs dark">
+                <nav className="navbar mobile-sidenav inc-shape navbar-default validnavs dark py-0">
 
-                    <div className="container d-flex justify-content-between align-items-center">
+                    <div className="container d-flex justify-content-between align-items-center py-0">
 
 
                         <div className="navbar-brand-left">
@@ -82,23 +82,28 @@ export default function Header() {
 
                             <ul className="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
                                 <li className="dropdown">
-                                    <Link href="/">Home Agriculture</Link>
+                                    <Link href="/">Home</Link>
                                 </li>
+
                                 <li className="dropdown">
-                                    <Link href="#" className="dropdown-toggle" data-toggle="dropdown" >Pages</Link>
-                                    <ul className="dropdown-menu">
-                                        <li><Link href="/about">About Us</Link></li>
-                                        <li><Link href="/content-details">Content Details</Link></li>
-                                        <li><Link href="/contact">Contact Us</Link></li>
-                                    </ul>
+                                    <Link href="/about">About</Link>
+                                </li>
+
+                                <li className="dropdown">
+                                    <Link href="/contact">Contact</Link>
                                 </li>
                                 
                                 <li className="dropdown">
-                                    <Link href="#" className="dropdown-toggle" data-toggle="dropdown" >Services</Link>
+                                    <Link href="#" className="dropdown-toggle" data-bs-toggle="dropdown" >Services</Link>
                                     <ul className="dropdown-menu">
-                                        <li><Link href="#">Services Version One</Link></li>
-                                        <li><Link href="#">Services Version Two</Link></li>
-                                        <li><Link href="#">Services Details</Link></li>
+                                        <li><Link href="#">Smart Farming Solution</Link></li>
+                                    </ul>
+                                </li>
+
+                                 <li className="dropdown">
+                                    <Link href="#" className="dropdown-toggle" data-bs-toggle="dropdown" >Market Place</Link>
+                                    <ul className="dropdown-menu">
+                                        <li><Link href="#">Join Our Community</Link></li>
                                     </ul>
                                 </li>
                             </ul>
@@ -109,48 +114,6 @@ export default function Header() {
                         <div className="attr-right">
                             <div className="attr-nav">
                                 <ul>
-
-                                    <li className="dropdown">
-                                        <Link href="#" className="dropdown-toggle" data-toggle="dropdown" >
-                                            <i className="far fa-shopping-cart"></i>
-                                            <span className="badge">3</span>
-                                        </Link>
-                                        <ul className="dropdown-menu cart-list">
-                                            <li>
-                                                <div className="thumb">
-                                                    <Link href="#" className="photo">
-                                                        <Image fill src="/assets/img/products/1.png" alt="Thumb" />
-                                                    </Link>
-                                                    <Link href="#" className="remove-product">
-                                                        <i className="fas fa-times"></i>
-                                                    </Link>
-                                                </div>
-                                                <div className="info">
-                                                    <h6><Link href="#">Delica omtantur </Link></h6>
-                                                    <p>2x - <span className="price">$99.99</span></p>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div className="thumb">
-                                                    <Link href="#" className="photo">
-                                                        <Image fill src="/assets/img/products/2.png" alt="Thumb" />
-                                                    </Link>
-                                                    <Link href="#" className="remove-product">
-                                                        <i className="fas fa-times"></i>
-                                                    </Link>
-                                                </div>
-                                                <div className="info">
-                                                    <h6><Link href="#">Omnes ocurreret</Link></h6>
-                                                    <p>1x - <span className="price">$33.33</span></p>
-                                                </div>
-                                            </li>
-                                            <li className="total">
-                                                <span className="pull-right"><strong>Total</strong>: $0.00</span>
-                                                <Link href="#" className="btn btn-default btn-cart">Cart</Link>
-                                                <Link href="#" className="btn btn-default btn-cart">Checkout</Link>
-                                            </li>
-                                        </ul>
-                                    </li>
                                     {session ? (
                                         <li>
                                             <Logout className="px-4 py-2 bg-red-500 text-white rounded hover:bg-red-600" />
