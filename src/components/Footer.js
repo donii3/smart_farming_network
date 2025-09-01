@@ -1,5 +1,6 @@
 'use client';
 import Image from "next/image";
+import Link from "next/link";
 
 
 
@@ -31,22 +32,22 @@ export default function Footer(){
                             <h4 className="widget-title">Explore</h4>
                             <ul>
                                 <li>
-                                    <a href="about-us.html">About Us</a>
+                                    <Link href="/about">About Us</Link>
                                 </li>
                                 <li>
-                                    <a href="team.html">Meet Our Team</a>
+                                    <Link href="team.html">Meet Our Team</Link>
                                 </li>
                                 <li>
-                                    <a href="blog-single-with-sidebar.html">News & Media</a>
+                                    <Link href="blog-single-with-sidebar.html">News & Media</Link>
                                 </li>
                                 <li>
-                                    <a href="services.html">Services</a>
+                                    <Link href="services.html">Services</Link>
                                 </li>
                                 <li>
-                                    <a href="contact-us.html">Contact Us</a>
+                                    <Link href="/contact">Contact Us</Link>
                                 </li>
                                 <li>
-                                    <a href="team-details.html">Volunteers</a>
+                                    <Link href="team-details.html">Volunteers</Link>
                                 </li>
                             </ul>
                         </div>
@@ -58,28 +59,28 @@ export default function Footer(){
                             <ul>
                                 <li>
                                     <div className="thumb">
-                                        <a href="blog-single-with-sidebar.html">
+                                        <Link href="blog-single-with-sidebar.html">
                                             <Image  width={50} height={50} src="/assets/img/1.jpeg" alt="Thumb" />
-                                        </a>
+                                        </Link>
                                     </div>
                                     <div className="info">
                                         <div className="meta-title">
                                             <span className="post-date">12 Sep, 2023</span>
                                         </div>
-                                        <h5><a href="blog-single-with-sidebar.html">Meant widow equal an share least part. </a></h5>
+                                        <h5><Link href="blog-single-with-sidebar.html">Meant widow equal an share least part. </Link></h5>
                                     </div>
                                 </li>
                                 <li>
                                     <div className="thumb">
-                                        <a href="blog-single-with-sidebar.html">
+                                        <Link href="blog-single-with-sidebar.html">
                                             <Image  width={50} height={50} src="/assets/img/4.jpeg" alt="Thumb" />
-                                        </a>
+                                        </Link>
                                     </div>
                                     <div className="info">
                                         <div className="meta-title">
                                             <span className="post-date">18 Jul, 2023</span>
                                         </div>
-                                        <h5><a href="blog-single-with-sidebar.html">SmartFarms with tailore IoT machine drones </a></h5>
+                                        <h5><Link href="blog-single-with-sidebar.html">SmartFarms with tailore IoT machine drones </Link></h5>
                                     </div>
                                 </li>
                             </ul>
@@ -105,7 +106,7 @@ export default function Footer(){
                                     </div>
                                     <div className="content">
                                         <strong>Email:</strong>
-                                        <a href="mailto:info@validtheme.com">info@validtheme.com</a>
+                                        <Link href="mailto:info@validtheme.com">info@validtheme.com</Link>
                                     </div>
                                 </li>
                                 <li>
@@ -114,7 +115,7 @@ export default function Footer(){
                                     </div>
                                     <div className="content">
                                         <strong>Phone:</strong>
-                                        <a href="tel:2151234567">+123 34598768</a>
+                                        <Link href="tel:2151234567">+123 34598768</Link>
                                     </div>
                                 </li>
                             </ul>
@@ -127,7 +128,7 @@ export default function Footer(){
             <div className="footer-bottom text-center">
                 <div className="row">
                     <div className="col-lg-12">
-                        <p>&copy; Copyright 2023. All Rights Reserved by <a href="#">validthemes</a></p>
+                        <p>&copy; Copyright 2023. All Rights Reserved by <Link href="#">validthemes</Link></p>
                     </div>
                 </div>
             </div>

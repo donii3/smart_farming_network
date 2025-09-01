@@ -3135,8 +3135,8 @@ a.btn-round-animation.dark {
     # Banner Styles
 =================================================================== */
 .banner-area {
-	height: 100%;
-	width: 100%;
+	height: 100vh;
+	width: 100vw;
 	position: relative;
 }
 
@@ -3148,7 +3148,7 @@ a.btn-round-animation.dark {
 }
 
 .banner-area div {
-	height: 100%;
+	height: 100vh;
 }
 
 .banner-area div.swiper-slide .row div {
@@ -8997,18 +8997,20 @@ footer {
 	left: 50%;
 	top: 50%;
 	content: "";
-	height: 20%;
-	width: 20%;
+	height: 40%;
+	width: 40%;
 	background: url(../img/logo.png); /*issues with image fitting*/
 	transform: translate(-50%, -50%);
 	background-repeat: no-repeat;
 	background-position: center;
+	background-size: cover;
 }
 
 .bg-dark .agrica-preloader .animation-preloader::after {
 	background: url(../img/logo.png);
 	background-repeat: no-repeat;
 	background-position: center;
+	background-size: cover;
 }
 
 .agrica-preloader .animation-preloader .spinner {
