@@ -38,18 +38,10 @@ export default function Home() {
                 <Image fill src="/assets/img/shape/2.png" alt="Image Not Found" />
               </div>
               <div className="container">
-                <div className="row align-center">
-                  <div className="col-xl-9">
+                <div className="row align-center justify-content-between">
+                  <div className="col-xl-11">
                     <div className="content">
-                      <div className="badge">
-                        <div className="curve-text">
-                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 150" version="1.1">
-                            <path id="textPath" d="M 0,75 a 75,75 0 1,1 0,1 z"></path>
-                            <text><textPath href="#textPath">100% Smart Solutions</textPath></text>
-                          </svg>
-                          <a href="https://www.youtube.com/watch?v=ipUuoMCEbDQ" className="popup-youtube"><i className="fas fa-arrow-right"></i></a>
-                        </div>
-                      </div>
+                      
                       <div className="info">
                         <h2>Elevate Your Agricultural Operations with SFN</h2>
                         <p>
@@ -57,6 +49,16 @@ export default function Home() {
                         </p>
                         <div className="button">
                           <a className="btn btn-theme btn-md radius animation" href="about-us.html">Discover More</a>
+                        </div>
+                      </div>
+
+                      <div className="badge mx-5">
+                        <div className="curve-text">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 150" version="1.1">
+                            <path id="textPath" d="M 0,75 a 75,75 0 1,1 0,1 z"></path>
+                            <text><textPath href="#textPath">100% Smart Solutions</textPath></text>
+                          </svg>
+                          <a href="https://www.youtube.com/watch?v=ipUuoMCEbDQ" className="popup-youtube"><i className="fas fa-arrow-right"></i></a>
                         </div>
                       </div>
                     </div>
@@ -71,8 +73,8 @@ export default function Home() {
                 <Image fill src="/assets/img/shape/2.png" alt="Image Not Found" />
               </div>
               <div className="container">
-                <div className="row align-center">
-                  <div className="col-xl-9">
+                <div className="row align-center justify-content-between">
+                  <div className="col-xl-11">
                     <div className="content">
                       <div className="badge">
                         <div className="curve-text">
@@ -111,7 +113,7 @@ export default function Home() {
           <div className="row align-center">
             <div className="col-xl-6 col-lg-5">
               <div className="about-style-one-thumb">
-                <Image width={800} height={800} src="/assets/img/55.jpeg" alt="Image Not Found" />
+                <Image width={800} height={500} src="/assets/img/55.jpeg" alt="Image Not Found" />
                 <div className="animation-shape">
                   <Image fill src="/assets/img/illustration/1.png" alt="Image Not Found" />
                 </div>
@@ -396,21 +398,21 @@ export default function Home() {
                   <li>
                     <div className="content">
                       <h5 className="title">Hotline</h5>
-                      <a href="">+4733378901</a>
+                      <a href="">+234(0) 912 188 1781</a>
                     </div>
                   </li>
                   <li>
                     <div className="info">
                       <h5 className="title">Our Location</h5>
                       <p>
-                        55 Main Street, The Grand Avenue 2nd Block, <br /> New York City
+                        HeadQuarters Address: 82A Js Tarkaa Railway Bye Pass, Makurdi, <br /> Benue State.
                       </p>
                     </div>
                   </li>
                   <li>
                     <div className="info">
                       <h5 className="title">Official Email</h5>
-                      <a href="mailto:info@agrul.com.com">info@agrul.com</a>
+                      <a href="mailto: smartfarmningetwork@gmail.com"> smartfarmningetwork@gmail.com</a>
                     </div>
                   </li>
                 </ul>

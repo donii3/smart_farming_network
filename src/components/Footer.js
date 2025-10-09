@@ -34,58 +34,20 @@ export default function Footer(){
                                 <li>
                                     <Link href="/about">About Us</Link>
                                 </li>
+                               
                                 <li>
-                                    <Link href="team.html">Meet Our Team</Link>
-                                </li>
-                                <li>
-                                    <Link href="blog-single-with-sidebar.html">News & Media</Link>
-                                </li>
-                                <li>
-                                    <Link href="services.html">Services</Link>
+                                    <Link href="#">Services</Link>
                                 </li>
                                 <li>
                                     <Link href="/contact">Contact Us</Link>
                                 </li>
                                 <li>
-                                    <Link href="team-details.html">Volunteers</Link>
+                                    <Link href="#">Community</Link>
                                 </li>
                             </ul>
                         </div>
                     </div>
                    
-                    <div className="col-lg-3 col-md-6 item">
-                        <div className="footer-item recent-post">
-                            <h4 className="widget-title">Recent Posts</h4>
-                            <ul>
-                                <li>
-                                    <div className="thumb">
-                                        <Link href="blog-single-with-sidebar.html">
-                                            <Image  width={50} height={50} src="/assets/img/1.jpeg" alt="Thumb" />
-                                        </Link>
-                                    </div>
-                                    <div className="info">
-                                        <div className="meta-title">
-                                            <span className="post-date">12 Sep, 2023</span>
-                                        </div>
-                                        <h5><Link href="blog-single-with-sidebar.html">Meant widow equal an share least part. </Link></h5>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div className="thumb">
-                                        <Link href="blog-single-with-sidebar.html">
-                                            <Image  width={50} height={50} src="/assets/img/4.jpeg" alt="Thumb" />
-                                        </Link>
-                                    </div>
-                                    <div className="info">
-                                        <div className="meta-title">
-                                            <span className="post-date">18 Jul, 2023</span>
-                                        </div>
-                                        <h5><Link href="blog-single-with-sidebar.html">SmartFarms with tailore IoT machine drones </Link></h5>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
                    
                     <div className="col-lg-3 col-md-6 item">
                         <div className="footer-item contact">
@@ -97,7 +59,7 @@ export default function Footer(){
                                     </div>
                                     <div className="content">
                                         <strong>Address:</strong>
-                                        5919 Trussville Crossings Pkwy, Birmingham
+                                         82A Js Tarkaa Railway Bye Pass, Makurdi, Benue State.
                                     </div>
                                 </li>
                                 <li>
@@ -106,7 +68,7 @@ export default function Footer(){
                                     </div>
                                     <div className="content">
                                         <strong>Email:</strong>
-                                        <Link href="mailto:info@validtheme.com">info@validtheme.com</Link>
+                                        <Link href="mailto:smartfarmningetwork@gmail.com">smartfarmningetwork@gmail.com</Link>
                                     </div>
                                 </li>
                                 <li>
@@ -115,7 +77,7 @@ export default function Footer(){
                                     </div>
                                     <div className="content">
                                         <strong>Phone:</strong>
-                                        <Link href="tel:2151234567">+123 34598768</Link>
+                                        <Link href="tel:+234912 188 1781"> +234(0) 912 188 1781</Link>
                                     </div>
                                 </li>
                             </ul>
@@ -127,6 +89,32 @@ export default function Footer(){
 
             <div className="footer-bottom text-center">
                 <div className="row">
+                    <div className="">
+                        <div className="">
+                            <ul className="social d-flex justify-content-center">
+                                <li className="me-3">
+                                    <Link href="#">
+                                        <i className="fab fa-facebook-f"></i>
+                                    </Link>
+                                </li>
+                                <li className="me-3">
+                                    <Link href="#">
+                                        <i className="fab fa-twitter"></i>
+                                    </Link>
+                                </li>
+                                <li className="me-3">
+                                    <Link href="#">
+                                        <i className="fab fa-youtube"></i>
+                                    </Link>
+                                </li>
+                                <li className="me-3">
+                                    <Link href="#">
+                                        <i className="fab fa-linkedin-in"></i>
+                                    </Link>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                     <div className="col-lg-12">
                         <p>&copy; Copyright 2023. All Rights Reserved by <Link href="#">validthemes</Link></p>
                     </div>
