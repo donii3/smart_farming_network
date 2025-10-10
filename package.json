@@ -9,9 +9,10 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@prisma/client": "^6.13.0",
     "@auth/core": "^0.40.0",
+    "@prisma/client": "^6.13.0",
     "bcryptjs": "^3.0.2",
+    "chart.js": "^4.5.0",
     "next": "15.2.4",
     "next-auth": "^5.0.0-beta.29",
     "react": "^19.0.0",
