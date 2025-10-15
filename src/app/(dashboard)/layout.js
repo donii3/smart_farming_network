@@ -50,6 +50,12 @@ export default function FarmersLayout({ children }) {
           </li>
           <li className="nav-item">
             <a href="#" className="nav-link">
+              <i className="fa fa-star me-2"></i> Reviews
+            </a>
+          </li>
+
+          <li className="nav-item">
+            <a href="#" className="nav-link">
               <i className="fa fa-cog me-2"></i> Settings
             </a>
           </li>
