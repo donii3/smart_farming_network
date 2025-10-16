@@ -29,44 +29,44 @@ export default function FarmersLayout({ children }) {
 
         <ul className="nav mt-3 row">
           <li className="nav-item">
-            <a href="#" className="nav-link active">
+            <Link href="/farmers" className="nav-link active">
               <i className="fa fa-home me-2"></i> Dashboard
-            </a>
+            </Link>
           </li>
           <li className="nav-item">
-            <a href="#" className="nav-link">
+            <Link href="#" className="nav-link">
               <i className="fa fa-leaf me-2"></i> Farms
-            </a>
+            </Link>
           </li>
           <li className="nav-item">
-            <a href="#" className="nav-link">
+            <Link href="#" className="nav-link">
               <i className="fa fa-tasks me-2"></i> Tasks
-            </a>
+            </Link>
           </li>
           <li className="nav-item">
-            <a href="#" className="nav-link">
+            <Link href="#" className="nav-link">
               <i className="fas fa-chart-line me-2"></i> Analytics
-            </a>
+            </Link>
           </li>
           <li className="nav-item">
-            <a href="#" className="nav-link">
+            <Link href="#" className="nav-link">
               <i className="fa fa-star me-2"></i> Reviews
-            </a>
+            </Link>
           </li>
 
           <li className="nav-item">
-            <a href="#" className="nav-link">
-              <i className="fa fa-cog me-2"></i> Settings
-            </a>
+            <Link href="/farmers/profile" className="nav-link">
+              <i className="fa fa-user me-2"></i> Profile
+            </Link>
           </li>
           
           {/* Spacer to push logout to bottom */}
           <div className="flex-grow-1"></div>
           
           <li className="nav-item">
-            <a href="#" className="nav-link btn btn-outline-light text-dark">
+            <Link href="#" className="nav-link btn btn-outline-light text-dark">
               <i className="fa fa-sign-out me-2"></i> Logout
-            </a>
+            </Link>
           </li>
         </ul>
       </aside>
@@ -82,7 +82,7 @@ export default function FarmersLayout({ children }) {
             >
               <i className="fa fa-bars"></i>
             </button>
-            <h5 className="fw-semibold mb-0 text-dark">Farmers Dashboard</h5>
+            <h5 className="fw-semibold mb-0 text-dark">Farmers Board</h5>
           </div>
           
           <div className="d-flex align-items-center gap-3">
