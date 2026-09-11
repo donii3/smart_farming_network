@@ -1,5 +1,195 @@
 import Image from "next/image";
 import Link from "next/link";
+import LeadershipSection from "@/components/LeadershipSection";
+
+const leadershipMembers = [
+  {
+    id: "edward-terungwa-ordams",
+    name: "Edward Terungwa Ordams",
+    role: "Founder & Managing Partner",
+    image: "/assets/img/team/founder.png",
+
+    summary:
+      "Visionary leader driving GSFN's mission to transform African agriculture through technology and organized infrastructure.",
+
+    bio: [
+      {
+        type: "paragraph",
+        content:
+          "Edward Terungwa Ordams is an entrepreneur, strategist, researcher, and innovation-driven business leader passionate about building solutions that create measurable economic and social impact. He is the Founder of GoodLife Smart Farming Network (GSFN), an emerging agricultural technology and smart farming company focused on transforming Africa’s agricultural ecosystem through technology, data, precision farming, farmer support, and innovative financing models.",
+      },
+
+      {
+        type: "paragraph",
+        content:
+          "With a background in Philosophy and Business Administration & Management, Edward brings together strategic thinking, entrepreneurship, research, leadership, and ecosystem development to solve complex real-world problems. His work at GSFN is driven by a vision to move African agriculture from traditional, fragmented systems toward a more connected, intelligent, and technology-enabled ecosystem.",
+      },
+
+      {
+        type: "paragraph",
+        content:
+          "As the founder and strategic lead of GSFN, Edward oversees the organisation’s vision, business development, strategic partnerships, product direction, innovation, fundraising strategy, and ecosystem expansion. Under his leadership, GSFN is developing FarmVerse, a digital agricultural platform designed to connect farmers, investors, farmland, agricultural services, technology, and markets within a unified ecosystem.",
+      },
+
+      {
+        type: "paragraph",
+        content:
+          "Edward is particularly passionate about precision agriculture, smart farming infrastructure, youth participation in agriculture, agritech innovation, digital farmer support, and sustainable agricultural development. His long-term vision is to build scalable agricultural systems that empower farmers with the tools, knowledge, technology, and market access required to become more productive and economically resilient.",
+      },
+
+      {
+        type: "paragraph",
+        content:
+          "Beyond GSFN, Edward is an entrepreneur with interests spanning business development, technology, media, services, and social impact. He is also involved in leadership and community development initiatives, with a strong interest in using enterprise and innovation as instruments for nation-building.",
+      },
+
+      {
+        type: "heading",
+        content: "Core Areas of Expertise",
+      },
+
+      {
+        type: "list",
+        items: [
+          "Entrepreneurship & Business Strategy",
+          "Agritech & Smart Farming Innovation",
+          "Strategic Partnerships & Ecosystem Development",
+          "Product & Business Development",
+          "Research & Innovation",
+          "Leadership & Team Building",
+          "Youth Empowerment & Social Impact",
+          "Agricultural Technology & Digital Transformation",
+        ],
+      },
+    ],
+
+    linkedin:
+      "https://www.linkedin.com/in/edward-ordams-684467b8/",
+  },
+
+  {
+    id: "grace-onahi-odeh",
+    name: "Grace Onahi Odeh",
+    role: "Operations & HR Director",
+    image: "/assets/img/team/operator.jpg",
+
+    summary:
+      "Leads operations and human capital development, ensuring organizational excellence and team alignment.",
+
+    bio: [
+      {
+        type: "paragraph",
+        content:
+          "Grace Odeh is a versatile professional with experience in Human Resources, Operations, administration, and entrepreneurship. She holds a Bachelor’s degree in History from Benue State University and has developed expertise in organizational coordination, people management, business operations, documentation, and strategic execution.",
+      },
+
+      {
+        type: "paragraph",
+        content:
+          "She currently serves as a Co-Founder and Operations Manager at GoodLife Smart Farming Network (GSFN), an agritech company focused on transforming Africa’s agricultural ecosystem through technology, innovation, farmer empowerment, and strategic partnerships.",
+      },
+
+      {
+        type: "paragraph",
+        content:
+          "In her role, she contributes to the coordination of business operations, team management, administrative systems, process development, and the effective implementation of organizational goals.",
+      },
+    ],
+
+    linkedin:
+      "https://www.linkedin.com/in/grace-odeh-61276b367/",
+  },
+
+  {
+    id: "gberikon-kentiter",
+    name: "Gberikon Kentiter Esq.",
+    role: "Legal & Arbitration Professional",
+    image: "/assets/img/team/lawyer.jpeg",
+    summary:
+      "A legal professional with expertise in law, construction industry arbitration, international law, and mediation.",
+
+    bio: [
+      {
+        type: "paragraph",
+        content:
+          "Gberikon Kentiter Esq. is a legal professional with experience and professional affiliations spanning law, construction industry arbitration, international law, and alternative dispute resolution.",
+      },
+
+      {
+        type: "paragraph",
+        content:
+          "He is a Member of the Institute of Construction Industry Arbitrators and the International Law Association, reflecting his professional engagement in legal practice and dispute resolution within local and international contexts.",
+      },
+
+      {
+        type: "paragraph",
+        content:
+          "Gberikon is also a Certified Mediator accredited by the Mediation Training Institute, with professional interests in mediation, arbitration, and effective resolution of disputes.",
+      },
+
+      {
+        type: "heading",
+        content: "Professional Affiliations & Certifications",
+      },
+
+      {
+        type: "list",
+        items: [
+          "Member, Institute of Construction Industry Arbitrators",
+          "Member, International Law Association",
+          "Certified Mediator, accredited by the Mediation Training Institute",
+        ],
+      },
+    ],
+
+    linkedin:
+      "https://www.linkedin.com/in/kentiter-gberikon-a942b2366/",
+  },
+  {
+    id: "nathaniel-egbodo",
+    name: "Nathaniel Egbodo",
+    role: "Lead Tech Engineer",
+    image: "/assets/img/team/lead-engineer.png",
+
+    summary:
+      "Directs technical architecture and innovation, building the digital infrastructure powering FarmVerse.",
+
+    bio: [
+      {
+        type: "paragraph",
+        content:
+          "Nathaniel Egbodo serves as the Lead Tech Engineer at GoodLife Smart Farming Network (GSFN). He leads the organization's technical direction, overseeing software architecture, digital infrastructure, and technology-driven innovation.",
+      },
+
+      {
+        type: "paragraph",
+        content:
+          "His work focuses on building scalable systems and digital platforms that support the organization's smart-farming ecosystem and the FarmVerse initiative.",
+      },
+
+      {
+        type: "heading",
+        content: "Core Areas of Focus",
+      },
+
+      {
+        type: "list",
+        items: [
+          "Software Architecture & Engineering",
+          "Digital Infrastructure",
+          "Agritech Technology",
+          "Product Development",
+          "Technical Strategy",
+          "Scalable Web Platforms",
+          "Technology Innovation",
+        ],
+      },
+    ],
+
+    linkedin:
+      "https://www.linkedin.com/in/nathaniel-egbodo-639a313a4/",
+  },
+];
 
 export default function AboutUsPage() {
   return (
@@ -449,60 +639,7 @@ export default function AboutUsPage() {
       </section>
 
       {/* ================= LEADERSHIP SECTION ================= */}
-      <section className="bg-light py-5">
-        <div className="container">
-          <div className="site-heading text-center mb-5">
-            <h2 className="title">Our Leadership</h2>
-          </div>
-
-          <div className="row text-center">
-            {[
-              {
-                name: "Edward Terungwa Ordams",
-                role: "Founder & Vision Lead",
-                image: "/assets/img/founder.jpg",
-                bio: "Visionary leader driving GSFN's mission to transform African agriculture through technology and organized infrastructure.",
-              },
-              {
-                name: "Grace Onahi Odeh",
-                role: "Operations & HR Director",
-                image: "/assets/img/operations-director.jpg",
-                bio: "Leads operations and human capital development, ensuring organizational excellence and team alignment.",
-              },
-              {
-                name: "Nathaniel Egbodo",
-                role: "Lead Tech Engineer",
-                image: "/assets/img/lead-engineer.png",
-                bio: "Directs technical architecture and innovation, building the digital infrastructure powering FarmVerse.",
-              },
-            ].map((member, index) => (
-              <div className="col-md-4 mb-4" key={index}>
-                <div className="card border-0 shadow-sm h-100 py-4">
-                  <div className="d-flex justify-content-center mb-3">
-                    <div
-                      className="position-relative rounded-circle overflow-hidden"
-                      style={{ width: "180px", height: "180px" }}
-                    >
-                      <Image
-                        src={member.image || "/assets/img/profile.png"}
-                        alt={member.name}
-                        fill
-                        style={{ objectFit: "cover", objectPosition: "top" }}
-                      />
-                    </div>
-                  </div>
-
-                  <div className="card-body pt-0">
-                    <h5 className="card-title mb-1">{member.name}</h5>
-                    <small className="text-success fw-bold d-block mb-2">{member.role}</small>
-                    <p className="card-text text-muted">{member.bio}</p>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      <LeadershipSection members={leadershipMembers} />
 
       {/* ================= PARTNERSHIPS SECTION ================= */}
       <section className="bg-white py-5">
