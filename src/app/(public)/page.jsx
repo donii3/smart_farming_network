@@ -458,65 +458,139 @@ export default function Home() {
 
           <div className="row">
             <div className="col-lg-4 col-md-6 service-one-single transform-el transform-x-right delay-2">
-              <div className="service-style-one-item bg-black border-20 border-black-300">
-                <div className="thumb">
-                  <div className="bg-warning text-white rounded d-flex align-items-center justify-content-center me-3 mb-5"
-                    style={{ width: 60, height: 60 }}>
-                    <i className="fas fa-tachometer-alt fs-3"></i>
+              <Link
+                href="/dashboard/profile"
+                className="text-decoration-none"
+              >
+                <div className="service-style-one-item bg-black border-20 border-black-300">
+                  <div className="thumb">
+                    <div className="bg-warning text-white rounded d-flex align-items-center justify-content-center me-3 mb-5"
+                      style={{ width: 60, height: 60 }}>
+                      <i className="fas fa-tachometer-alt fs-3"></i>
+                    </div>
+                  </div>
+                  <div className="info">
+                    <div className="top">
+                      <h4><Link className="text-white" href="/dashboard/profile">Smart Dashboard</Link></h4>
+                    </div>
+                    <p className="mb-3 text-white">
+                      Real-time overview of all your farming operations, from crop health to weather conditions in one centralized dashboard.
+                    </p>
+
+                    <span className="text-warning fw-semibold">
+                        Explore Your Smart Dashboard
+                        <i className="fas fa-arrow-right ms-2"></i>
+                      </span>
                   </div>
                 </div>
-                <div className="info">
-                  <div className="top">
-                    <h4><Link className="text-white" href="#">Smart Dashboard</Link></h4>
-                  </div>
-                  <p className="mb-3 text-white">
-                    Real-time overview of all your farming operations, from crop health to weather conditions in one centralized dashboard.
-                  </p>
-                </div>
-              </div>
+              </Link>
             </div>
 
             <div className="col-lg-4 col-md-6 service-one-single transform-el transform-y-down delay-2">
-              <div className="service-style-one-item bg-black border-20 border-black-300">
-                <div className="thumb">
-                  <div className="bg-warning text-white rounded d-flex align-items-center justify-content-center me-3 mb-5"
-                    style={{ width: 60, height: 60 }}>
-                    <i className="fas fa-cloud-sun fs-3"></i>
+              <Link
+                href="/services/weather-intelligence"
+                className="text-decoration-none"
+              >
+                <div className="service-style-one-item bg-black border-20 border-black-300">
+                  <div className="thumb">
+                    <div
+                      className="bg-warning text-white rounded d-flex align-items-center justify-content-center me-3 mb-5"
+                      style={{ width: 60, height: 60 }}
+                    >
+                      <i className="fas fa-cloud-sun fs-3"></i>
+                    </div>
+                  </div>
+
+                  <div className="info">
+                    <div className="top">
+                      <h4>
+                        <span className="text-white">
+                          Weather Intelligence
+                        </span>
+                      </h4>
+                    </div>
+
+                    <p className="mb-3 text-white">
+                      Advanced weather forecasting with agricultural insights,
+                      helping you make informed decisions about planting,
+                      harvesting and protection.
+                    </p>
+
+                    <span className="text-warning fw-semibold">
+                      Explore Weather Intelligence
+                      <i className="fas fa-arrow-right ms-2"></i>
+                    </span>
                   </div>
                 </div>
-                <div className="info">
-                  <div className="top">
-                    <h4><Link className="text-white" href="#">Weather Intelligence</Link></h4>
-                  </div>
-                  <p className="mb-3 text-white">
-                    Advanced weather forecasting with agricultural insights, helping you make informed decisions about planting, harvesting and protection.
-                  </p>
-                </div>
-              </div>
+              </Link>
             </div>
 
             <div className="col-lg-4 col-md-6 service-one-single transform-el transform-x-left delay-2">
-              <div className="service-style-one-item bg-black border-20 border-black-300">
-                <div className="thumb">
-                  <div className="bg-warning text-white rounded d-flex align-items-center justify-content-center me-3 mb-5"
-                    style={{ width: 60, height: 60 }}>
-                    <i className="fas fa-clipboard fs-3"></i>
+              <Link
+                href="#"
+                className="text-decoration-none"
+              >
+                <div className="service-style-one-item bg-black border-20 border-black-300">
+                  <div className="thumb">
+                    <div className="bg-warning text-white rounded d-flex align-items-center justify-content-center me-3 mb-5"
+                      style={{ width: 60, height: 60 }}>
+                      <i className="fas fa-clipboard fs-3"></i>
+                    </div>
+                  </div>
+                  <div className="info">
+                    <div className="top">
+                      <h4><Link className="text-white" href="/farmverse">Activity Tracking</Link></h4>
+                    </div>
+                    <p className="mb-3 text-white">
+                      Log and monitor all farming activities, including planting, fertilization, pest control, and harvesting with detailed analytics.
+                    </p>
+
+                     <span className="text-warning fw-semibold">
+                        Track Your Farm Activities
+                        <i className="fas fa-arrow-right ms-2"></i>
+                      </span>
                   </div>
                 </div>
-                <div className="info">
-                  <div className="top">
-                    <h4><Link className="text-white" href="#">Activity Tracking</Link></h4>
-                  </div>
-                  <p className="mb-3 text-white">
-                    Log and monitor all farming activities, including planting, fertilization, pest control, and harvesting with detailed analytics.
-                  </p>
-                </div>
-              </div>
+              </Link>
             </div>
           </div>
 
           <div className="row mb-5">
-            <div className="col-lg-3 col-md-3 service-one-single transform-el transform-x-left delay-2">
+            <div className="col-md-4 service-one-single transform-el transform-x-right delay-2">
+              <div className="service-style-one-item-small bg-black border-20 border-black-300">
+                <div className="thumb justify-content-center d-flex">
+                  <div className="bg-warning text-white rounded d-flex align-items-center justify-content-center me-3 mb-2"
+                    style={{ width: 45, height: 45 }}>
+                    <i className="fas fa-headset fs-3"></i>
+                  </div>
+                </div>
+                <div className="text-center">
+                  <h4><Link className="text-white" href="http://wa.me//2349121881781">24/7 Support</Link></h4>
+                  <p className="mb-3 text-white">
+                    Get help when you need it the most.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="col-md-4 service-one-single transform-el transform-y-top delay-2">
+              <div className="service-style-one-item-small bg-black border-20 border-black-300">
+                <div className="thumb justify-content-center d-flex">
+                  <div className="bg-warning text-white rounded d-flex align-items-center justify-content-center me-3 mb-2"
+                    style={{ width: 45, height: 45 }}>
+                    <i className="fas fa-cloud-sun fs-3"></i>
+                  </div>
+                </div>
+                <div className="text-center">
+                  <h4><Link className="text-white" href="/community">Community Forum</Link></h4>
+                  <p className="mb-3 text-white">
+                    Connect with fellow farmers worldwide.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="col-md-4 service-one-single transform-el transform-x-left delay-2">
               <div className="service-style-one-item-small bg-black border-20 border-black-300">
                 <div className="thumb justify-content-center d-flex">
                   <div className="bg-warning text-white rounded d-flex align-items-center justify-content-center mb-2"
@@ -533,56 +607,6 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="col-lg-3 col-md-3 service-one-single transform-el transform-y-top delay-2">
-              <div className="service-style-one-item-small bg-black border-20 border-black-300">
-                <div className="thumb justify-content-center d-flex">
-                  <div className="bg-warning text-white rounded d-flex align-items-center justify-content-center me-3 mb-2"
-                    style={{ width: 45, height: 45 }}>
-                    <i className="fas fa-cloud-sun fs-3"></i>
-                  </div>
-                </div>
-                <div className="text-center">
-                  <h4><Link className="text-white" href="#">Community Forum</Link></h4>
-                  <p className="mb-3 text-white">
-                    Connect with fellow farmers worldwide.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div className="col-lg-3 col-md-3 service-one-single transform-el transform-y-bottom delay-2">
-              <div className="service-style-one-item-small bg-black">
-                <div className="thumb justify-content-center d-flex">
-                  <div className="bg-warning text-white rounded d-flex align-items-center justify-content-center me-3 mb-2"
-                    style={{ width: 45, height: 45 }}>
-                    <i className="fas fa-clipboard fs-3"></i>
-                  </div>
-                </div>
-                <div className="text-center">
-                  <h4><Link className="text-white" href="#">Profile & Achievement</Link></h4>
-                  <p className="mb-3 text-white">
-                    Track progress and earn recognition.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div className="col-lg-3 col-md-3 service-one-single transform-el transform-x-right delay-2">
-              <div className="service-style-one-item-small bg-black border-20 border-black-300">
-                <div className="thumb justify-content-center d-flex">
-                  <div className="bg-warning text-white rounded d-flex align-items-center justify-content-center me-3 mb-2"
-                    style={{ width: 45, height: 45 }}>
-                    <i className="fas fa-headset fs-3"></i>
-                  </div>
-                </div>
-                <div className="text-center">
-                  <h4><Link className="text-white" href="#">24/7 Support</Link></h4>
-                  <p className="mb-3 text-white">
-                    Get help when you need it the most.
-                  </p>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </div>
@@ -632,12 +656,12 @@ export default function Home() {
                 </div>
                 <div className="info">
                   <div className="top">
-                    <h4><Link href="#">Livestock <span>Farm Services</span></Link></h4>
+                    <h4><Link href="/farmverse">Livestock <span>Farm Services</span></Link></h4>
                   </div>
                   <p>
                     Data-guided livestock services covering feeding, health, and farm management—powered by verified partners.
                   </p>
-                  <Link href="#" className="btn-angle"><i className="fas fa-arrow-right"></i></Link>
+                  <Link href="/farmverse" className="btn-angle"><i className="fas fa-arrow-right"></i></Link>
                 </div>
               </div>
             </div>
