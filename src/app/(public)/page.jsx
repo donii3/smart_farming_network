@@ -322,7 +322,7 @@ export default function Home() {
           <div className="event-carousel swiper">
             <div className="swiper-wrapper">
 
-              {/* Smart Farmer Movement */}
+              {/* Smart Farmer Movement
               <div className="swiper-slide">
                 <div className="text-center">
                   <Image
@@ -342,9 +342,9 @@ export default function Home() {
                     </Link>
                   </div>
                 </div>
-              </div>
+              </div> */}
 
-              {/* Investors Soiree */}
+              {/* Investors Soiree
               <div className="swiper-slide">
                 <div className="text-center">
                   <Image
@@ -364,7 +364,7 @@ export default function Home() {
                     </Link>
                   </div>
                 </div>
-              </div>
+              </div> */}
 
               {/* ads 1 */}
               <div className="swiper-slide">
@@ -599,7 +599,7 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="text-center">
-                  <h4><Link className="text-white" href="#">Knowledge Base</Link></h4>
+                  <h4><Link className="text-white" href="/knowledge-base">Knowledge Base</Link></h4>
                   <p className="mb-3 text-white">
                     Access farming guides and best practices.
                   </p>
@@ -652,14 +652,14 @@ export default function Home() {
             <div className="col-lg-4 col-md-6 service-one-single transform-el transform-y-down delay-3">
               <div className="service-style-one-item">
                 <div className="thumb">
-                  <Image width={100} height={80} src="/assets/img/illustration/4.png" alt="Livestock" />
+                  <Image width={100} height={90} src="/assets/img/andriod-icon.png" alt="Android Icon" />
                 </div>
                 <div className="info">
                   <div className="top">
-                    <h4><Link href="/farmverse">Livestock <span>Farm Services</span></Link></h4>
+                    <h4><Link href="/farmverse">Explore <span>Farmverse App</span></Link></h4>
                   </div>
                   <p>
-                    Data-guided livestock services covering feeding, health, and farm management—powered by verified partners.
+                    Download, install, and explore the Farmverse app to access a suite of digital tools designed to enhance your farming experience and connect you with a community of like-minded farmers.
                   </p>
                   <Link href="/farmverse" className="btn-angle"><i className="fas fa-arrow-right"></i></Link>
                 </div>

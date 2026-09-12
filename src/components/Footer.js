@@ -123,7 +123,7 @@ export default function Footer() {
 
                                     <li className="container p-4 px-2">
                                         <Link
-                                            href="https://drive.google.com/file/d/1h6ALXzfmM5lOWjaIEyR4FWKQxB57BQ7Q/view?usp=sharing"
+                                            href="https://drive.google.com/file/d/170IYUelO3PVGzQ43MTJ6F1OQmA_kqbtV/view?usp=sharing"
                                             download
                                             target="_blank"
                                             rel="noopener noreferrer"
