@@ -622,13 +622,13 @@ export default function Home() {
                 </div>
                 <div className="info">
                   <div className="top">
-                    <h4><Link href="#">Smart <span>Farming Solutions</span></Link></h4>
+                    <h4><Link href="/services">Smart <span>Farming Solutions</span></Link></h4>
                   </div>
                   <p>
                     Access modern farm machinery and tools through GSFN to improve efficiency, reduce manual labor, and increase yields—without the heavy upfront cost.
                   </p>
                 </div>
-                <Link href="#" className="btn-angle"><i className="fas fa-arrow-right"></i></Link>
+                <Link href="/services" className="btn-angle"><i className="fas fa-arrow-right"></i></Link>
               </div>
             </div>
 
