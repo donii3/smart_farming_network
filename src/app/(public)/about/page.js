@@ -504,7 +504,7 @@ export default function AboutUsPage() {
             {[
               { title: "Live", items: ["Farm monitoring systems", "Digital farm records", "Market price intelligence"] },
               { title: "Pilot", items: ["Smart irrigation systems", "Precision agriculture tools", "Crop yield prediction"] },
-              { title: "In Development", items: ["AI agricultural assistance (Edna)", "IoT sensor networks", "Blockchain traceability"] },
+              { title: "In Development", items: ["Project Edna", "IoT sensor networks", "Blockchain traceability"] },
               { title: "Planned", items: ["Connected agricultural marketplaces", "Advanced climate adaptation tools", "Predictive financing models"] },
             ].map((stage, index) => (
               <div className="col-md-6 col-lg-3 mb-4" key={index}>
@@ -610,25 +610,113 @@ export default function AboutUsPage() {
         <div className="container">
           <div className="site-heading text-center mb-5">
             <h2 className="title">Our Journey</h2>
-            <p className="text-muted">Only verified milestones are included</p>
+            <p className="text-muted">
+              From an agricultural idea to digital infrastructure for African farming
+            </p>
           </div>
 
           <div className="row">
             <div className="col-lg-8 offset-lg-2">
               <div className="timeline">
                 {[
-                  { year: "2024", title: "Company Formation", description: "GoodLife Smart Farming Network Ltd officially established." },
-                  { year: "2024", title: "Farmer Network Development", description: "Began onboarding and verification of agricultural partners." },
-                  { year: "2025", title: "FarmVerse Development", description: "Digital platform development and pilot programs launched." },
-                  { year: "2025-2026", title: "Smart Farming Deployments", description: "IoT and precision agriculture systems deployment across pilot regions." },
+                  {
+                    year: "2024",
+                    title: "GSFN Founded",
+                    subtitle: "Company Formation & Vision",
+                    description:
+                      "GoodLife Smart Farming Network Ltd. was established with a vision to build a technology-enabled agricultural ecosystem connecting farmers, markets, data, and capital.",
+                  },
+                  {
+                    year: "2025",
+                    title: "Documentation Registry & Farmer Network Begins",
+                    subtitle: "Field Network & Farmer Onboarding",
+                    description:
+                      "GSFN began building its farmer network, engaging agricultural partners, and laying the foundation for farmer verification and digitization.",
+                  },
+                  {
+                    year: "2025",
+                    title: "TEF Accelerator & Business Development",
+                    subtitle: "Venture Validation & Capacity Building",
+                    description:
+                      "GSFN became a Tony Elumelu Foundation (TEF) 2025 alumni, strengthening its entrepreneurial capacity, business model, and growth strategy.",
+                  },
+                  {
+                    year: "2025",
+                    title: "FarmVerse Takes Shape",
+                    subtitle: "Digital Agricultural Infrastructure",
+                    description:
+                      "Development of FarmVerse, GSFN's proprietary digital platform, began with the goal of bringing farmers, agricultural opportunities, market access, and intelligent tools into one ecosystem.",
+                  },
+                  {
+                    year: "2025",
+                    title: "Strategic Agricultural Partnerships",
+                    subtitle: "Expanding the Physical Network",
+                    description:
+                      "GSFN established strategic relationships within the agricultural ecosystem, including initiatives targeting thousands of farmers and large-scale agricultural land opportunities.",
+                  },
+                  {
+                    year: "2025–2026",
+                    title: "Smart Farming Development",
+                    subtitle: "IoT • Precision Agriculture • Data",
+                    description:
+                      "GSFN expanded beyond digital connectivity into physical smart-farming infrastructure, exploring IoT-enabled farms, precision agriculture, controlled environments, and real-time farm data.",
+                  },
+                  {
+                    year: "2026",
+                    title: "Smart Farmer Movement",
+                    subtitle: "Building the Next Generation of Farmers",
+                    description:
+                      "GSFN launched the Smart Farmer Movement to accelerate farmer education, digital adoption, technology awareness, and participation in the emerging smart-agriculture economy.",
+                  },
+                  {
+                    year: "2026",
+                    title: "FarmVerse Launch",
+                    subtitle: "From Development to Deployment",
+                    description:
+                      "FarmVerse moved from concept and development into public deployment, giving farmers and agricultural stakeholders access to digital tools, agricultural intelligence, and ecosystem services.",
+                  },
+                  {
+                    year: "2026",
+                    title: "Financial & Institutional Infrastructure",
+                    subtitle: "Technology Meets Capital",
+                    description:
+                      "GSFN began deeper engagement with financial and institutional partners to explore transaction infrastructure, agricultural finance, investment, and broader ecosystem integration.",
+                  },
+                  {
+                    year: "2026–2027",
+                    title: "National Scale-Up",
+                    subtitle: "10,000+ Verified Farmers",
+                    description:
+                      "GSFN's next major growth phase is focused on expanding its verified farmer network, strengthening FarmVerse, deploying smart-farming demonstration infrastructure, and expanding partnerships across Nigeria.",
+                  },
                 ].map((milestone, index) => (
                   <div key={index} className="d-flex gap-4 mb-4">
+                    {/* Year */}
                     <div style={{ minWidth: "100px" }}>
-                      <h6 className="fw-bold text-success">{milestone.year}</h6>
+                      <h6 className="fw-bold text-success mb-0">
+                        {milestone.year}
+                      </h6>
                     </div>
-                    <div className="flex-grow-1 pb-4" style={{ borderLeft: "3px solid #28a745", paddingLeft: "20px" }}>
-                      <h5 className="fw-bold">{milestone.title}</h5>
-                      <p className="text-muted mb-0">{milestone.description}</p>
+
+                    {/* Timeline Content */}
+                    <div
+                      className="flex-grow-1 pb-4"
+                      style={{
+                        borderLeft: "3px solid #28a745",
+                        paddingLeft: "20px",
+                      }}
+                    >
+                      <h5 className="fw-bold mb-1">
+                        {milestone.title}
+                      </h5>
+
+                      <h6 className="text-success fw-semibold mb-2">
+                        {milestone.subtitle}
+                      </h6>
+
+                      <p className="text-muted mb-0">
+                        {milestone.description}
+                      </p>
                     </div>
                   </div>
                 ))}
@@ -676,8 +764,8 @@ export default function AboutUsPage() {
           <div className="row">
             {[
               {
-                title: "AgriGo AI Assistant (Edna)",
-                image: "/assets/img/smart_farm.jpg",
+                title: "Project Edna",
+                image: "/assets/img/edna.jpg",
                 description:
                   "A production intelligence layer providing real-time insights, decision support, alerts, and predictive guidance across the GSFN farming ecosystem.",
                 link: "/projects/agrigo",
@@ -703,7 +791,8 @@ export default function AboutUsPage() {
                     src={project.image}
                     alt={project.title}
                     width={600}
-                    height={400}
+                    height={800}
+                    style={{objectPosition:"top", objectFit:"fit", height:"350px"}}
                     className="card-img-top"
                   />
                   <div className="card-body">
